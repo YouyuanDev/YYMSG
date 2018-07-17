@@ -196,11 +196,10 @@
                     <td colspan="2" >
                         <input class="easyui-textbox" type="text" value="" name="client_name" />
                     </td>
-                    <td class="i18n1" name="message"></td>
-                    <td colspan="2">
-                        <input class="easyui-textbox" name="message" type="text" style="width:150px;height:22px;padding:12px" >
+                    <td class="i18n1" name="company"></td>
+                    <td colspan="2" >
+                        <input class="easyui-textbox" type="text" value="" name="company" />
                     </td>
-
                 </tr>
                 <tr>
                     <td class="i18n1" name="messagetime"></td>
@@ -209,7 +208,7 @@
                     </td>
                     <td class="i18n1" name="isread"></td>
                     <td colspan="2">
-                        <input class="easyui-textbox" name="is_read" type="text" style="width:150px;height:22px;padding:12px" >
+                        <input class="easyui-textbox" name="is_read" type="text" >
                     </td>
 
                 </tr>
@@ -220,14 +219,13 @@
                     </td>
                     <td class="i18n1" name="email"></td>
                     <td colspan="2">
-                        <input class="easyui-textbox" name="is_read" type="email" style="width:150px;height:22px;padding:12px" >
+                        <input class="easyui-textbox" name="is_read" type="email">
                     </td>
-
                 </tr>
                 <tr>
-                    <td class="i18n1" name="company"></td>
-                    <td colspan="2" >
-                        <input class="easyui-textbox" type="text" value="" name="company" />
+                    <td class="i18n1" name="message"></td>
+                    <td colspan="4">
+                        <input class="easyui-textbox" data-options="multiline:true" name="message" type="text" style="width:90%;">
                     </td>
                 </tr>
 
