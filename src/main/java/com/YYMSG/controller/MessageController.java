@@ -60,12 +60,15 @@ public class MessageController {
 
 
     //保存Role
-    @RequestMapping(value = "/saveMessage")
+    @RequestMapping("/saveMessage")
     @ResponseBody
-    public Object saveMessage(Message message, HttpServletRequest request,HttpServletResponse response){
+    public String saveMessage(Message message,HttpServletResponse response){
         JSONObject json=new JSONObject();
         try{
             int resTotal=0;
+            if(message.getMessage_time()==null){
+                message.setMessage_time(new Date());
+            }
             if(message.getId()==0){
                 System.out.println(message.getClient_name());
                 message.setMessage_time(new Date());
@@ -97,7 +100,7 @@ public class MessageController {
                 e.printStackTrace();
             }
         }
-        return json;
+        return null;
     }
     //删除Message信息
     @RequestMapping("/delMessage")

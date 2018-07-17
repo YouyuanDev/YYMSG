@@ -1,11 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kurt
-  Date: 7/16/18
-  Time: 5:52 PM
-  To change this template use File | Settings | File Templates.
---%>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -14,7 +6,6 @@
     <title>留言信息管理</title>
     <link rel="stylesheet" type="text/css" href="../easyui/themes/bootstrap/easyui.css">
     <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
-    <link href="../miniui/multiupload/multiupload.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../css/common.css"/>
     <script src="../easyui/jquery.min.js" type="text/javascript"></script>
     <script src="../js/common.js" type="text/javascript"></script>
@@ -66,7 +57,6 @@
             $('#messageForm').form('clear');
             $("input[name='id']").val('0');
             url="/MessageOP/saveMessage.action";
-            look2.deselectAll();
         }
         function delMessage() {
             var row = $('#messageDatagrids').datagrid('getSelections');
@@ -95,20 +85,18 @@
         }
         function editMessage() {
             $('#hlcancelBtn').attr('operationtype','edit');
-
             var row = $('#messageDatagrids').datagrid('getSelected');
             if(row){
                 $('#messageDialog').dialog('open').dialog('setTitle','修改');
+                row.message_time=getDate1(row.message_time);
                 $('#messageForm').form('load',row);
 
-                url="/MessageOP/SaveMessage.action?id="+row.id;
+                url="/MessageOP/saveMessage.action?id="+row.id;
 
             }else{
                 hlAlertTwo();
             }
         }
-
-
 
         function search() {
             $('#messageDatagrids').datagrid('load',{
@@ -121,6 +109,7 @@
                 onSubmit:function () {
                 },
                 success: function(result){
+                    var result = eval('('+result+')');
                     if (result.success){
                         $('#messageDialog').dialog('close');
                         $('#messageDatagrids').datagrid('reload');
@@ -163,7 +152,7 @@
                 <th field="client_name" align="center" width="100"   name="client_name">客户姓名</th>
                 <th field="company" align="center" width="100"   name="company" >公司名称</th>
                 <th field="message" align="center" width="100"  name="message">留言信息</th>
-                <th field="message_time" align="center" width="100"  name="message_time">日期</th>
+                <th field="message_time" align="center" width="100"  name="message_time" data-options="formatter:formatterdate">日期</th>
                 <th field="email" align="center" width="100"  name="email">邮箱</th>
                 <th field="phone_no" align="center" width="100"  name="phone_no">邮箱</th>
                 <th field="is_read" align="center" width="100"  name="is_read">已读</th>
@@ -216,7 +205,7 @@
                 <tr>
                     <td class="i18n1" name="messagetime"></td>
                     <td colspan="2" >
-                        <input class="easyui-textbox" readonly="readonly" type="text" value="" name="message_time" />
+                        <input class="easyui-datetimebox"  type="text" value="" name="message_time" data-options="formatter:myformatter2,parser:myparser2"/>
                     </td>
                     <td class="i18n1" name="isread"></td>
                     <td colspan="2">
