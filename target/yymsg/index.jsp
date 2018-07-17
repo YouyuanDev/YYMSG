@@ -556,7 +556,6 @@
                     <div class="head_title text-center">
                         <h2>解决方案</h2>
                         <div class="separator_auto"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
 
@@ -584,7 +583,7 @@
                         <div class="col-md-4">
                             <div class="portfolio_item portfolio_item3 sm-m-top-30">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                    提供对天然气输送管涂敷生产与质检工序的质量控制解决方案。
                                 </p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -713,28 +712,28 @@
             <div class="skill_bottom_content text-center">
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
-                        <h2 class="statistic-counter">3468</h2>
+                        <h2 class="statistic-counter">38</h2>
                         <div class="separator_small"></div>
                         <h5><em>Projects Finished</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
-                        <h2 class="statistic-counter">4638</h2>
+                        <h2 class="statistic-counter">28</h2>
                         <div class="separator_small"></div>
                         <h5><em>Happy Clients</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
-                        <h2 class="statistic-counter">3468</h2>
+                        <h2 class="statistic-counter">16854</h2>
                         <div class="separator_small"></div>
                         <h5><em>Hours of work</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
-                        <h2 class="statistic-counter">3468</h2>
+                        <h2 class="statistic-counter">8427</h2>
                         <div class="separator_small"></div>
                         <h5><em>Cup of coffee</em></h5>
                     </div>
