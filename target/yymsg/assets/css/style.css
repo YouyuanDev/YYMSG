@@ -1215,7 +1215,7 @@ Featured section style
 }
 .featured_slider{
     width: 100%;  
-    height:250px;
+    height:auto;
     margin: 20px auto;    
     text-align: center;
 }
@@ -1741,19 +1741,35 @@ Footer Section style
 }
 /*new add style*/
 .nav li:hover{
-	 background-color:#008B8B;transition: all .7s;
-}
-.weixin_qrcode img{
-	display:none;
+    background-color:#008B8B;transition: all .7s;
 }
 .weixin_qrcode,.weixin_qrcode img{
-	width:100px;
-	height:100px;
+    width:100px;
+    height:100px;
 }
 .solution_img{
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	overflow:hidden;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow:hidden;
 }
+.chat-li{position: relative;}
+.chat-hover{
+    position: absolute;
+    top:-120px;
+    left:0px;
+    z-index:1000;
+    padding:5px;
+    display: none;
+}
+.chat-hover1{
+    position: absolute;
+    top:-50px;
+    left:0px;
+    z-index:1000;
+    padding:5px;
+    display: none;
+    color: #E06863;
+}
+

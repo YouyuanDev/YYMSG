@@ -440,38 +440,38 @@
     <%--</div>--%>
 <%--</div>--%>
 
-<%--<div class="featured_slider">--%>
-    <%--<div>--%>
-        <%--<div class="featured_img">--%>
-            <%--<img src="assets/images/fprojects/1.jpg" alt="" />--%>
-            <%--<a href="assets/images/fprojects/1.jpg" class="popup-img"></a>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<div>--%>
-        <%--<div class="featured_img">--%>
-            <%--<img src="assets/images/fprojects/2.jpg" alt="" />--%>
-            <%--<a href="assets/images/fprojects/2.jpg" class="popup-img"></a>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<div>--%>
-        <%--<div class="featured_img">--%>
-            <%--<img src="assets/images/fprojects/3.jpg" alt="" />--%>
-            <%--<a href="assets/images/fprojects/3.jpg" class="popup-img"></a>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<div>--%>
-        <%--<div class="featured_img">--%>
-            <%--<img src="assets/images/fprojects/4.jpg" alt="" />--%>
-            <%--<a href="assets/images/fprojects/4.jpg" class="popup-img"></a>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<div>--%>
-        <%--<div class="featured_img">--%>
-            <%--<img src="assets/images/fprojects/5.jpg" alt="" />--%>
-            <%--<a href="assets/images/fprojects/5.jpg" class="popup-img"></a>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
+<div class="featured_slider">
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/1.jpg" alt="" />
+            <a href="assets/images/fprojects/1.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/2.jpg" alt="" />
+            <a href="assets/images/fprojects/2.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/3.jpg" alt="" />
+            <a href="assets/images/fprojects/3.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/4.jpg" alt="" />
+            <a href="assets/images/fprojects/4.jpg" class="popup-img"></a>
+        </div>
+    </div>
+    <div>
+        <div class="featured_img">
+            <img src="assets/images/fprojects/5.jpg" alt="" />
+            <a href="assets/images/fprojects/5.jpg" class="popup-img"></a>
+        </div>
+    </div>
+</div>
 <!-- End off featured slider -->
 <%--<div class="copyrights">Collect from--%>
     <%--<a href="http://www.cssmoban.com/">企业网站模板</a>--%>
@@ -561,89 +561,96 @@
                 </div>
 
                 <div class="portfolio_content">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="portfolio_item">
-                                    <img src="assets/images/solution/IMG_0.JPG" alt="" />
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
+                    <div class="col-md-12">
+
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="portfolio_item">
+                                        <img src="assets/images/solution/IMG_0.JPG" alt="" />
+                                        <div class="portfolio_hover text-center">
+                                            <h6 class="text-uppercase text-white">Title</h6>
+                                            <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                            <div class="portfolio_hover_icon">
+                                                <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
+                                                <a href=""><i class="fa fa-search"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 m-top-30">
-                                <div class="portfolio_item portfolio_item2">
-                                    <img src="assets/images/solution/IMG_10.PNG" alt=""  class="solution_img"/>
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/3.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="portfolio_item portfolio_item3 sm-m-top-30">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                </p>
                             </div>
-                            <div class="col-md-6 m-top-30">
-                                <div class="portfolio_item portfolio_item2">
-                                    <img src="assets/images/solution/IMG_4.PNG" alt="" />
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/5.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
-                                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="col-md-4 m-top-30">
+                            <div class="portfolio_item portfolio_item2">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 m-top-30">
+                            <div class="portfolio_item">
+                                <img src="assets/images/solution/IMG_2.JPG" alt="" />
+                                <div class="portfolio_hover text-center">
+                                    <h6 class="text-uppercase text-white">Title</h6>
+                                    <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                    <div class="portfolio_hover_icon">
+                                        <a href="assets/images/Portfolio/4.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
+                                        <a href=""><i class="fa fa-search"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="portfolio_item portfolio_item3 sm-m-top-30">
-                            <img src="assets/images/solution/IMG_5.PNG" alt="" />
-                            <div class="portfolio_hover text-center">
-                                <h6 class="text-uppercase text-white">Title</h6>
-                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                <div class="portfolio_hover_icon">
-                                    <a href="assets/images/Portfolio/1.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                    <a href=""><i class="fa fa-search"></i></a>
+                    <div class="col-md-12">
+
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="portfolio_item">
+                                        <img src="assets/images/solution/IMG_11.JPG" alt="" />
+                                        <div class="portfolio_hover text-center">
+                                            <h6 class="text-uppercase text-white">Title</h6>
+                                            <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                            <div class="portfolio_hover_icon">
+                                                <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
+                                                <a href=""><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 m-top-30">
-                        <div class="portfolio_item portfolio_item2">
-                            <img src="assets/images/solution/IMG_6.PNG" alt="" />
-                            <div class="portfolio_hover text-center">
-                                <h6 class="text-uppercase text-white">Title</h6>
-                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                <div class="portfolio_hover_icon">
-                                    <a href="assets/images/Portfolio/6.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                    <a href=""><i class="fa fa-search"></i></a>
-                                </div>
+
+                        <div class="col-md-4">
+                            <div class="portfolio_item portfolio_item3 sm-m-top-30">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 m-top-30">
-                        <div class="portfolio_item">
-                            <img src="assets/images/solution/IMG_2.JPG" alt="" />
-                            <div class="portfolio_hover text-center">
-                                <h6 class="text-uppercase text-white">Title</h6>
-                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                <div class="portfolio_hover_icon">
-                                    <a href="assets/images/Portfolio/4.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                    <a href=""><i class="fa fa-search"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
@@ -905,35 +912,35 @@
                     </div>
                 </div>
                 <div class="col-md-4 sec-animate3">
-                    <div class="blog_item m-top-20">
+                    <div class=" m-top-20">
                         <div class="blog_item_img">
-                            <img src="assets/images/Blog/1.jpg" alt="" />
+                            <img src="assets/images/solution/IMG_10.PNG" alt="" />
                         </div>
                         <div class="blog_text roomy-40">
-                            <h6>海隆管道APP已上线</h6>
-                            <p><em><a href="">May 15, 2018</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                            <h6>钢管涂层生产信息化控制系统APP-主页</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 sec-animate4">
-                    <div class="blog_item m-top-20">
+                    <div class=" m-top-20">
                         <div class="blog_item_img">
-                            <img src="assets/images/Blog/2.jpg" alt="" />
+                            <img src="assets/images/solution/IMG_8.PNG" alt="" />
                         </div>
                         <div class="blog_text roomy-40">
-                            <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
-                            <p><em><a href="">May 15, 2018</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                            <h6>钢管涂层生产信息化控制系统APP-产品信息页</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 sec-animate5">
-                    <div class="blog_item m-top-20">
+                    <div class=" m-top-20">
                         <div class="blog_item_img">
-                            <img src="assets/images/Blog/3.jpg" alt="" />
+                            <img src="assets/images/solution/IMG_9.PNG" alt="" />
                         </div>
                         <div class="blog_text roomy-40">
-                            <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
-                            <p><em><a href="">May 15, 2018</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                            <h6>钢管涂层生产信息化控制系统APP-工序检测表单</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
@@ -1093,11 +1100,13 @@
                                 <!--<li>
                                     <a href=""><i class="fa fa-qq"></i></a>
                                 </li>-->
-                                <li>
+                                <li class="chat-li">
                                     <a href="jacascript:;" class="weixin_qrcode_span" id="chatting_our"><i class="fa fa-weixin"></i></a>
+                                    <div class="chat-hover weixin_qrcode"><img src="assets/images/fprojects/1.jpg" /></div>
                                 </li>
-                                <li class="weixin_qrcode">
-                                    <img src="assets/images/fprojects/1.jpg"/>
+                                <li class="chat-li">
+                                    <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-mail-forward"></i></a>
+                                    <div class="chat-hover1 chat_email"><p>43434343@qq.com</p></div>
                                 </li>
                                 <!--<li>
                                     <a href=""><i class="fa fa-weibo"></i></a>

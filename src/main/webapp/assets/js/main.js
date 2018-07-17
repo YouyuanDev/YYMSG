@@ -183,9 +183,16 @@ jQuery(document).ready(function($) {
 });
 /*新增函数*/
 function openWeixinQRCode() {
-	$('#chatting_our').click(function() {
-		$('.weixin_qrcode img').show();
-	});
+    $('#chatting_our').hover(function() {
+        $('.weixin_qrcode').show();
+    },function(){
+        $('.weixin_qrcode').hide();
+    });
+    $('#chatting_eamil').hover(function() {
+        $('.chat_email').show();
+    },function(){
+        $('.chat_email').hide();
+    });
 }
 
 function loadCompanyLocation() {
