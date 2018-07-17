@@ -1,5 +1,7 @@
 package com.YYMSG.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Message {
@@ -7,7 +9,7 @@ public class Message {
     private  int id; //流水号
     private String client_name;
     private String message;
-
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date message_time;
     private String is_read;
     private String phone_no;

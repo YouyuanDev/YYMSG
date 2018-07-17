@@ -2,17 +2,24 @@ package com.YYMSG.controller;
 
 import com.YYMSG.dao.MessageDao;
 import com.YYMSG.entity.Message;
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.YYMSG.util.ResponseUtil;
+import com.alibaba.fastjson.JSONPObject;
+import com.google.gson.JsonObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -55,21 +62,19 @@ public class MessageController {
     //保存Role
     @RequestMapping(value = "/saveMessage")
     @ResponseBody
-    public String saveMessage(Message message, HttpServletResponse response){
-        System.out.print("saveMessage");
-
+    public Object saveMessage(Message message, HttpServletRequest request,HttpServletResponse response){
         JSONObject json=new JSONObject();
         try{
             int resTotal=0;
-
-
             if(message.getId()==0){
+                System.out.println(message.getClient_name());
+                message.setMessage_time(new Date());
+                message.setIs_read("0");
                 //添加
                 resTotal=messageDao.addMessage(message);
 
             }else{
                 //修改！
-
                 resTotal=messageDao.updateMessage(message);
             }
             if(resTotal>0){
@@ -92,10 +97,8 @@ public class MessageController {
                 e.printStackTrace();
             }
         }
-        return null;
+        return json;
     }
-
-
     //删除Message信息
     @RequestMapping("/delMessage")
     public String delMessage(@RequestParam(value = "hlparam")String hlparam,HttpServletResponse response)throws Exception{
