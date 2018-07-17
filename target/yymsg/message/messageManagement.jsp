@@ -44,7 +44,7 @@
         }
         $(function () {
 
-            $('#hlRoleDialog').dialog({
+            $('#messageDialog').dialog({
                 onClose:function () {
                     var type=$('#hlcancelBtn').attr('operationtype');
                     if(type=="add"){
@@ -60,16 +60,16 @@
 
 
 
-        function addRole(){
+        function addMessage(){
             $('#hlcancelBtn').attr('operationtype','add');
-            $('#hlRoleDialog').dialog('open').dialog('setTitle','新增');
-            $('#RoleForm').form('clear');
+            $('#messageDialog').dialog('open').dialog('setTitle','新增');
+            $('#messageForm').form('clear');
             $("input[name='id']").val('0');
             url="/MessageOP/saveMessage.action";
             look2.deselectAll();
         }
-        function delRole() {
-            var row = $('#RoleDatagrids').datagrid('getSelections');
+        function delMessage() {
+            var row = $('#messageDatagrids').datagrid('getSelections');
             if(row.length>0){
                 var idArr=[];
                 for (var i=0;i<row.length;i++){
@@ -82,7 +82,7 @@
                             "/MessageOP/delMessage.action",
                             {"hlparam":idArrs},function (data) {
                                 if(data.success){
-                                    $("#RoleDatagrids").datagrid("reload");
+                                    $("#messageDatagrids").datagrid("reload");
                                 }
                                 hlAlertFour(data.message);
                             },"json");
@@ -93,13 +93,13 @@
                 hlAlertOne();
             }
         }
-        function editRole() {
+        function editMessage() {
             $('#hlcancelBtn').attr('operationtype','edit');
 
-            var row = $('#RoleDatagrids').datagrid('getSelected');
+            var row = $('#messageDatagrids').datagrid('getSelected');
             if(row){
-                $('#hlRoleDialog').dialog('open').dialog('setTitle','修改');
-                $('#RoleForm').form('load',row);
+                $('#messageDialog').dialog('open').dialog('setTitle','修改');
+                $('#messageForm').form('load',row);
 
                 url="/MessageOP/SaveMessage.action?id="+row.id;
 
@@ -111,30 +111,19 @@
 
 
         function search() {
-            $('#RoleDatagrids').datagrid('load',{
+            $('#messageDatagrids').datagrid('load',{
             });
         }
 
-
-
-        function RoleFormSubmit() {
-            $('#RoleForm').form('submit',{
+        function FormSubmit() {
+            $('#messageForm').form('submit',{
                 url:url,
                 onSubmit:function () {
-                    //表单验证
-                    //碱洗时间
-
-
-
-
-
                 },
                 success: function(result){
-                    //alert(result);
-                    var result = eval('('+result+')');
                     if (result.success){
-                        $('#hlRoleDialog').dialog('close');
-                        $('#RoleDatagrids').datagrid('reload');
+                        $('#messageDialog').dialog('close');
+                        $('#messageDatagrids').datagrid('reload');
                         clearFormLabel();
                     }
                     hlAlertFour(result.message);
@@ -144,12 +133,12 @@
                 }
             });
         }
-        function RoleCancelSubmit() {
-            $('#hlRoleDialog').dialog('close');
+        function CancelSubmit() {
+            $('#messageDialog').dialog('close');
         }
 
         function  clearFormLabel() {
-            $('#RoleForm').form('clear');
+            $('#messageForm').form('clear');
 
         }
 
@@ -166,7 +155,7 @@
 <fieldset class="b3" style="padding:10px;margin:10px;">
     <legend> <h3><b style="color: orange" >|&nbsp;</b><span class="i18n1" name="datadisplay">数据展示</span></h3></legend>
     <div  style="margin-top:5px;">
-        <table class="easyui-datagrid" id="RoleDatagrids" url="/MessageOP/getMessageByLike.action" striped="true" loadMsg="正在加载中。。。" textField="text" pageSize="20" fitColumns="true" pagination="true" toolbar="#hlRoleTb">
+        <table class="easyui-datagrid" id="messageDatagrids" url="/MessageOP/getMessageByLike.action" striped="true" loadMsg="正在加载中。。。" textField="text" pageSize="20" fitColumns="true" pagination="true" toolbar="#messageTb">
             <thead>
             <tr>
                 <th data-options="field:'ck',checkbox:true"></th>
@@ -187,21 +176,21 @@
 </fieldset>
 
 <!--工具栏-->
-<div id="hlRoleTb" style="padding:10px;">
+<div id="messageTb" style="padding:10px;">
 
 
     <a href="#" class="easyui-linkbutton" plain="true" data-options="iconCls:'icon-search'" onclick="search()">Search</a>
     <div style="float:right">
-        <a href="#" id="addRoleLinkBtn" class="easyui-linkbutton i18n1" name="add" data-options="iconCls:'icon-add',plain:true" onclick="addRole()">添加</a>
-        <a href="#" id="editRoleLinkBtn" class="easyui-linkbutton i18n1" name="edit" data-options="iconCls:'icon-edit',plain:true" onclick="editRole()">修改</a>
-        <a href="#" id="deltRoleLinkBtn" class="easyui-linkbutton i18n1" name="delete" data-options="iconCls:'icon-remove',plain:true" onclick="delRole()">删除</a>
+        <a href="#" id="addMessageLinkBtn" class="easyui-linkbutton i18n1" name="add" data-options="iconCls:'icon-add',plain:true" onclick="addMessage()">添加</a>
+        <a href="#" id="editMessageLinkBtn" class="easyui-linkbutton i18n1" name="edit" data-options="iconCls:'icon-edit',plain:true" onclick="editMessage()">修改</a>
+        <a href="#" id="deltMessageLinkBtn" class="easyui-linkbutton i18n1" name="delete" data-options="iconCls:'icon-remove',plain:true" onclick="delMessage()">删除</a>
     </div>
 </div>
 
 
 <!--添加、修改框-->
-<div id="hlRoleDialog" class="easyui-dialog" data-options="title:'添加',modal:true"  closed="true" buttons="#dlg-buttons" style="display: none;padding:5px;width:950px;height:auto;">
-    <form id="RoleForm" method="post">
+<div id="messageDialog" class="easyui-dialog" data-options="title:'添加',modal:true"  closed="true" buttons="#dlg-buttons" style="display: none;padding:5px;width:950px;height:auto;">
+    <form id="messageForm" method="post">
 
 
         <fieldset style="width:900px;border:solid 1px #aaa;margin-top:8px;position:relative;">
@@ -214,73 +203,43 @@
 
                 </tr>
                 <tr>
-                    <td class="i18n1" name="roleno">角色编号</td>
+                    <td class="i18n1" name="clientname"></td>
                     <td colspan="2" >
-                        <input class="easyui-textbox" type="text" value="" name="role_no" />
+                        <input class="easyui-textbox" type="text" value="" name="client_name" />
                     </td>
-                    <td class="i18n1" name="rolename">角色名称</td>
+                    <td class="i18n1" name="message"></td>
                     <td colspan="2">
-                        <input class="easyui-textbox" name="role_name" type="text" style="width:150px;height:22px;padding:12px" >
+                        <input class="easyui-textbox" name="message" type="text" style="width:150px;height:22px;padding:12px" >
                     </td>
 
                 </tr>
                 <tr>
-
-                    <td  class="i18n1" name="pushevent">推送事件</td>
-                    <td colspan="5">
-                        <div id="combobox1" class="mini-combobox hl-mini-input" style="width:400px;"  popupWidth="185" textField="push_event_name" valueField="push_event"
-                             url="/Role/getAllPushEventRule.action" name="push_event_list" multiSelect="true"  showClose="true" oncloseclick="onComboxCloseClick" >
-                            <div property="columns">
-                                <div header="事件" field="push_event_name"></div>
-                            </div>
-                        </div>
-
+                    <td class="i18n1" name="messagetime"></td>
+                    <td colspan="2" >
+                        <input class="easyui-textbox" readonly="readonly" type="text" value="" name="message_time" />
                     </td>
+                    <td class="i18n1" name="isread"></td>
+                    <td colspan="2">
+                        <input class="easyui-textbox" name="is_read" type="text" style="width:150px;height:22px;padding:12px" >
+                    </td>
+
                 </tr>
                 <tr>
-
-                    <td class="i18n1" name="functionlist">权限列表</td>
-                    <td colspan="5">
-                        <input id="lookup2" name="function_no_list" class="mini-lookup hl-mini-input" style="width:400px;"
-                               textField="function_no" valueField="function_no" popupWidth="auto"
-                               popup="#gridPanel" grid="#datagrid1" multiSelect="true"
-                        />
-
-                        <div id="gridPanel" class="mini-panel" title="header" iconCls="icon-add" style="width:450px;height:250px;"
-                             showToolbar="true" showCloseButton="true" showHeader="false" bodyStyle="padding:0" borderStyle="border:0"
-                        >
-                            <div property="toolbar" style="padding:5px;padding-left:8px;text-align:center;">
-                                <div style="float:left;padding-bottom:2px;">
-                                    <span>功能编号或名称：</span>
-                                    <input id="keyText" class="mini-textbox" style="width:160px;" onenter="onSearchClick"/>
-                                    <a class="mini-button" onclick="onSearchClick">查询</a>
-                                    <a class="mini-button" onclick="onClearClick">清除</a>
-                                </div>
-                                <div style="float:right;padding-bottom:2px;">
-                                    <a class="mini-button" onclick="onCloseClick">关闭</a>
-                                </div>
-                                <div style="clear:both;"></div>
-                            </div>
-                            <div id="datagrid1" class="mini-datagrid" style="width:100%;height:100%;"
-                                 borderStyle="border:0" showPageSize="false" showPageIndex="false"
-                                 url="/Function/getFunctionByNoName.action"
-                            >
-                                <div property="columns">
-                                    <div type="checkcolumn" ></div>
-                                    <div field="module_name" width="120" headerAlign="center" allowSort="true" class="i18n1" name="modulename">功能模块</div>
-                                    <div field="function_no" width="120" headerAlign="center" allowSort="true" class="i18n1" name="functionno">功能编号</div>
-                                    <div field="function_name" width="120" headerAlign="center" allowSort="true" class="i18n1" name="functionname">功能名称</div>
-                                    <%--<div field="module_function_name" width="120" headerAlign="center" allowSort="true" class="i18n1" name="modulefunctionname">模块功能名称</div>--%>
-                                    <div field="uri" width="120" headerAlign="center" allowSort="true" class="i18n1" name="uri">uri</div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <td class="i18n1" name="phoneno"></td>
+                    <td colspan="2" >
+                        <input class="easyui-textbox" type="text" value="" name="phone_no" />
+                    </td>
+                    <td class="i18n1" name="email"></td>
+                    <td colspan="2">
+                        <input class="easyui-textbox" name="is_read" type="email" style="width:150px;height:22px;padding:12px" >
                     </td>
 
-
-
-
+                </tr>
+                <tr>
+                    <td class="i18n1" name="company"></td>
+                    <td colspan="2" >
+                        <input class="easyui-textbox" type="text" value="" name="company" />
+                    </td>
                 </tr>
 
             </table>
@@ -293,8 +252,8 @@
 
 </div>
 <div id="dlg-buttons" align="center" style="width:900px;">
-    <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="RoleFormSubmit()">Save</a>
-    <a href="#" class="easyui-linkbutton" id="hlcancelBtn" operationtype="add" iconCls="icon-cancel" onclick="RoleCancelSubmit()">Cancel</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="FormSubmit()">Save</a>
+    <a href="#" class="easyui-linkbutton" id="hlcancelBtn" operationtype="add" iconCls="icon-cancel" onclick="CancelSubmit()">Cancel</a>
 </div>
 
 
@@ -302,6 +261,6 @@
 </body>
 </html>
 <script type="text/javascript">
-
+    hlLanguage("../i18n/");
 
 </script>
