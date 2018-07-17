@@ -677,19 +677,19 @@
                 <div class="col-md-6">
                     <div class="skill_bar sm-m-top-50">
                         <div class="teamskillbar clearfix m-top-20" data-percent="80%">
-                            <h6>GRAPHIC DESIGN</h6>
+                            <h6>Architecture Design</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
 
                         <div class="teamskillbar clearfix m-top-50" data-percent="75%">
-                            <h6>TYPOGRAPHY</h6>
+                            <h6>Algorithm Implement</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
 
                         <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                            <h6>HTML / CSS</h6>
+                            <h6>Data Analysis</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
