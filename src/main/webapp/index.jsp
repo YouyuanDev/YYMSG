@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script type="text/javascript">
-        
+
         function submitMessage() {
             var client_name = $('#first_name').val();
             var message = $('#message').val();
@@ -242,7 +242,7 @@
 
     </nav>
 
-    <!--Home Sections-->
+    <!--首页 Sections-->
 
     <section id="hello" class="home bg-mega">
         <div class="overlay"></div>
@@ -416,66 +416,66 @@
 <!--End off production section -->
 
 <!--Video section-->
-<section id="video" class="video">
-    <div class="overlay"></div>
-    <div class="main_video roomy-100 m-top-100 m-bottom-100 text-center">
-        <div class="video_text text-center">
-            <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-link"><span class="fa fa-play"></span></a>
-        </div>
-    </div>
-</section>
+<%--<section id="video" class="video">--%>
+    <%--<div class="overlay"></div>--%>
+    <%--<div class="main_video roomy-100 m-top-100 m-bottom-100 text-center">--%>
+        <%--<div class="video_text text-center">--%>
+            <%--<a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-link"><span class="fa fa-play"></span></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</section>--%>
 <!--End off video section -->
 
-<div class="container">
-    <div class="row">
-        <div class="main_featured m-top-100">
-            <div class="col-sm-12">
-                <div class="head_title text-center">
-                    <h2>FEATURED WORK</h2>
-                    <div class="separator_auto"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<%--<div class="container">--%>
+    <%--<div class="row">--%>
+        <%--<div class="main_featured m-top-100">--%>
+            <%--<div class="col-sm-12">--%>
+                <%--<div class="head_title text-center">--%>
+                    <%--<h2>FEATURED WORK</h2>--%>
+                    <%--<div class="separator_auto"></div>--%>
+                    <%--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</div>--%>
 
-<div class="featured_slider">
-    <div>
-        <div class="featured_img">
-            <img src="assets/images/fprojects/1.jpg" alt="" />
-            <a href="assets/images/fprojects/1.jpg" class="popup-img"></a>
-        </div>
-    </div>
-    <div>
-        <div class="featured_img">
-            <img src="assets/images/fprojects/2.jpg" alt="" />
-            <a href="assets/images/fprojects/2.jpg" class="popup-img"></a>
-        </div>
-    </div>
-    <div>
-        <div class="featured_img">
-            <img src="assets/images/fprojects/3.jpg" alt="" />
-            <a href="assets/images/fprojects/3.jpg" class="popup-img"></a>
-        </div>
-    </div>
-    <div>
-        <div class="featured_img">
-            <img src="assets/images/fprojects/4.jpg" alt="" />
-            <a href="assets/images/fprojects/4.jpg" class="popup-img"></a>
-        </div>
-    </div>
-    <div>
-        <div class="featured_img">
-            <img src="assets/images/fprojects/5.jpg" alt="" />
-            <a href="assets/images/fprojects/5.jpg" class="popup-img"></a>
-        </div>
-    </div>
-</div>
+<%--<div class="featured_slider">--%>
+    <%--<div>--%>
+        <%--<div class="featured_img">--%>
+            <%--<img src="assets/images/fprojects/1.jpg" alt="" />--%>
+            <%--<a href="assets/images/fprojects/1.jpg" class="popup-img"></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div class="featured_img">--%>
+            <%--<img src="assets/images/fprojects/2.jpg" alt="" />--%>
+            <%--<a href="assets/images/fprojects/2.jpg" class="popup-img"></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div class="featured_img">--%>
+            <%--<img src="assets/images/fprojects/3.jpg" alt="" />--%>
+            <%--<a href="assets/images/fprojects/3.jpg" class="popup-img"></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div class="featured_img">--%>
+            <%--<img src="assets/images/fprojects/4.jpg" alt="" />--%>
+            <%--<a href="assets/images/fprojects/4.jpg" class="popup-img"></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+    <%--<div>--%>
+        <%--<div class="featured_img">--%>
+            <%--<img src="assets/images/fprojects/5.jpg" alt="" />--%>
+            <%--<a href="assets/images/fprojects/5.jpg" class="popup-img"></a>--%>
+        <%--</div>--%>
+    <%--</div>--%>
+<%--</div>--%>
 <!-- End off featured slider -->
-<div class="copyrights">Collect from
-    <a href="http://www.cssmoban.com/">企业网站模板</a>
-</div>
+<%--<div class="copyrights">Collect from--%>
+    <%--<a href="http://www.cssmoban.com/">企业网站模板</a>--%>
+<%--</div>--%>
 
 <!--Service Section-->
 <!--<section id="service" class="service">
@@ -741,78 +741,78 @@
 <!--End off Skill section -->
 
 <!--Testimonial Section-->
-<section id="testimonial" class="testimonial fix">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="main_testimonial roomy-100">
-                <div class="head_title text-center">
-                    <h2 class="text-white">OUR TESTIMONIALS</h2>
-                </div>
-                <div class="testimonial_slid text-center">
-                    <div class="testimonial_item">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+<%--<section id="testimonial" class="testimonial fix">--%>
+    <%--<div class="overlay"></div>--%>
+    <%--<div class="container">--%>
+        <%--<div class="row">--%>
+            <%--<div class="main_testimonial roomy-100">--%>
+                <%--<div class="head_title text-center">--%>
+                    <%--<h2 class="text-white">OUR TESTIMONIALS</h2>--%>
+                <%--</div>--%>
+                <%--<div class="testimonial_slid text-center">--%>
+                    <%--<div class="testimonial_item">--%>
+                        <%--<div class="col-sm-10 col-sm-offset-1">--%>
+                            <%--<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
 
-                            <div class="test_authour m-top-30">
-                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_item">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                            <%--<div class="test_authour m-top-30">--%>
+                                <%--<h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="testimonial_item">--%>
+                        <%--<div class="col-sm-10 col-sm-offset-1">--%>
+                            <%--<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
 
-                            <div class="test_authour m-top-30">
-                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_item">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                            <%--<div class="test_authour m-top-30">--%>
+                                <%--<h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="testimonial_item">--%>
+                        <%--<div class="col-sm-10 col-sm-offset-1">--%>
+                            <%--<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
 
-                            <div class="test_authour m-top-30">
-                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_item">
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                            <%--<div class="test_authour m-top-30">--%>
+                                <%--<h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div class="testimonial_item">--%>
+                        <%--<div class="col-sm-10 col-sm-offset-1">--%>
+                            <%--<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
 
-                            <div class="test_authour m-top-30">
-                                <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End off row-->
-    </div>
-    <!--End off container -->
-</section>
+                            <%--<div class="test_authour m-top-30">--%>
+                                <%--<h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                                <%--<i class="fa fa-star"></i>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<!--End off row-->--%>
+    <%--</div>--%>
+    <%--<!--End off container -->--%>
+<%--</section>--%>
 <!--End off Testimonial section -->
 
 <!--client brand section-->
@@ -955,7 +955,7 @@
 </div>-->
 <!-- End off Maps Section-->
 
-<!--About Sections-->
+<!--关于我们Sections-->
 <section id="about" class="about roomy-100">
     <div class="container">
         <div class="row">
@@ -1074,7 +1074,7 @@
 </section>
 <!--End off About section -->
 
-<!--Contact Us Section-->
+<!--联系我们Section-->
 <section id="contact" class="contact bg-mega fix">
     <div class="container">
         <div class="row">
@@ -1082,7 +1082,7 @@
                 <div class="col-md-4">
                     <div class="rage_widget">
                         <div class="widget_head">
-                            <h3 class="text-white">YouYuan Tech.</h3>
+                            <h3 class="text-white">Top Inspector</h3>
                             <div class="separator_small"></div>
                         </div>
                         <p>如果有什么问题，你可以通过在此页面发送消息的方式的联系我们，也可以通过以下方式联系我们，我们会最快给你答复。</p>
@@ -1156,9 +1156,10 @@
         <div class="row">
             <div class="main_footer text-center p-top-40 p-bottom-30">
                 <p class="wow fadeInRight" data-wow-duration="1s">
-                    More Templates
-                    <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from
-                    <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>2016. All Rights Reserved
+                    2018. All Rights Reserved
+                </p>
+                <p>
+                    ©2018 Top  Inspector 沪ICP证0000000号
                 </p>
             </div>
         </div>
