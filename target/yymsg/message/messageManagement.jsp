@@ -98,7 +98,7 @@
             }
         }
 
-        function search() {
+        function DoSearch() {
             $('#messageDatagrids').datagrid('load',{
             });
         }
@@ -168,7 +168,7 @@
 <div id="messageTb" style="padding:10px;">
 
 
-    <a href="#" class="easyui-linkbutton" plain="true" data-options="iconCls:'icon-search'" onclick="search()">Search</a>
+    <a href="#" class="easyui-linkbutton" plain="true" data-options="iconCls:'icon-search'" onclick="DoSearch()">Search</a>
     <div style="float:right">
         <a href="#" id="addMessageLinkBtn" class="easyui-linkbutton i18n1" name="add" data-options="iconCls:'icon-add',plain:true" onclick="addMessage()">添加</a>
         <a href="#" id="editMessageLinkBtn" class="easyui-linkbutton i18n1" name="edit" data-options="iconCls:'icon-edit',plain:true" onclick="editMessage()">修改</a>
