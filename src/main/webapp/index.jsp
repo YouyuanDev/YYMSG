@@ -147,9 +147,9 @@
                     <li class="search">
                         <a href="#"><i class="fa fa-search"></i></a>
                     </li>
-                    <li class="side-menu">
-                        <a href="#"><i class="fa fa-bars"></i></a>
-                    </li>
+                    <%--<li class="side-menu">--%>
+                        <%--<a href="#"><i class="fa fa-bars"></i></a>--%>
+                    <%--</li>--%>
                 </ul>
             </div>
             <!-- End Atribute Navigation -->
@@ -195,49 +195,49 @@
         </div>
 
         <!-- Start Side Menu -->
-        <div class="side">
-            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-            <div class="widget">
-                <h6 class="title">Custom Pages</h6>
-                <ul class="link">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="widget">
-                <h6 class="title">Additional Links</h6>
-                <ul class="link">
-                    <li>
-                        <a href="#">Retina Homepage</a>
-                    </li>
-                    <li>
-                        <a href="#">New Page Examples</a>
-                    </li>
-                    <li>
-                        <a href="#">Parallax Sections</a>
-                    </li>
-                    <li>
-                        <a href="#">Shortcode Central</a>
-                    </li>
-                    <li>
-                        <a href="#">Ultimate Font Collection</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <%--<div class="side">--%>
+            <%--<a href="#" class="close-side"><i class="fa fa-times"></i></a>--%>
+            <%--<div class="widget">--%>
+                <%--<h6 class="title">Custom Pages</h6>--%>
+                <%--<ul class="link">--%>
+                    <%--<li>--%>
+                        <%--<a href="#">About</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Services</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Blog</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Portfolio</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Contact</a>--%>
+                    <%--</li>--%>
+                <%--</ul>--%>
+            <%--</div>--%>
+            <%--<div class="widget">--%>
+                <%--<h6 class="title">Additional Links</h6>--%>
+                <%--<ul class="link">--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Retina Homepage</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">New Page Examples</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Parallax Sections</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Shortcode Central</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#">Ultimate Font Collection</a>--%>
+                    <%--</li>--%>
+                <%--</ul>--%>
+            <%--</div>--%>
+        <%--</div>--%>
         <!-- End Side Menu -->
 
     </nav>
@@ -285,8 +285,8 @@
                             </div>
                             <div class="production_price_border text-center">
                                 <div class="production_price">
-                                    <h3 class="text-white">$19</h3>
-                                    <p class="text-white">per month</p>
+                                    <h3 class="text-white"><i class="fa fa-database"></i></h3>
+                                    <%--<p class="text-white">per month</p>--%>
                                 </div>
                             </div>
 
@@ -319,8 +319,8 @@
                             </div>
                             <div class="production_price_border text-center">
                                 <div class="production_price">
-                                    <h3 class="text-white">$39</h3>
-                                    <p class="text-white">per month</p>
+                                    <h3 class="text-white"><i class="fa fa-pencil"></i></h3>
+                                    <%--<p class="text-white">per month</p>--%>
                                 </div>
                             </div>
 
@@ -348,8 +348,8 @@
                             </div>
                             <div class="production_price_border text-center">
                                 <div class="production_price">
-                                    <h3 class="text-white">$99</h3>
-                                    <p class="text-white">per month</p>
+                                    <h3 class="text-white"><i class="fa fa-pie-chart"></i></h3>
+                                    <%--<p class="text-white">per month</p>--%>
                                 </div>
                             </div>
 
@@ -385,7 +385,7 @@
                             <i class="icofont icofont-light-bulb"></i>
                             <h6 class="m-top-30">生产线质检系统的定制与设计</h6>
                             <div class="separator_small"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>定制化的系统，针对不同的客户和不同的客户需求制作独特的定制化系统。不仅满足客户需求，而且丰富了系统的多样化。</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -393,7 +393,7 @@
                             <i class="icofont icofont-imac"></i>
                             <h6 class="m-top-30">提供个性化的生产数据采集方案</h6>
                             <div class="separator_small"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>数据分析是系统不可获取的功能，我们提供多样化、人性化的生产数据采集方案，并且对这些生产数据进行个性化分析，满足客户需求。</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -401,7 +401,7 @@
                             <i class="icofont icofont-database"></i>
                             <h6 class="m-top-30">提供数据的云端存储和多样化分析</h6>
                             <div class="separator_small"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>数据云端存储，不仅解决硬件带来的问题，而且维护、升级、扩容非常方便，而且我们提供数据多样化的分析，为客户提供精准服务。</p>
                         </div>
                     </div>
                 </div>
@@ -568,8 +568,8 @@
                                     <div class="portfolio_item">
                                         <img src="assets/images/solution/IMG_0.JPG" alt="" />
                                         <div class="portfolio_hover text-center">
-                                            <h6 class="text-uppercase text-white">Title</h6>
-                                            <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                            <h6 class="text-uppercase text-white"></h6>
+                                            <p class=" text-white"></p>
                                             <div class="portfolio_hover_icon">
                                                 <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -585,30 +585,30 @@
                                 <p>
                                     提供对天然气输送管涂敷生产与质检工序的质量控制解决方案。
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                </p>
+                                <%--<p>--%>
+                                    <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
+                                <%--</p>--%>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-12">
                         <div class="col-md-4 m-top-30">
-                            <div class="portfolio_item portfolio_item2">
+                            <div class="portfolio_item portfolio_item2 sm-m-top-30">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                    管道喷涂，主要用于解决管道防腐问题。
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                </p>
+                                <%--<p>--%>
+                                    <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
+                                <%--</p>--%>
                             </div>
                         </div>
                         <div class="col-md-8 m-top-30">
                             <div class="portfolio_item">
                                 <img src="assets/images/solution/IMG_2.JPG" alt="" />
                                 <div class="portfolio_hover text-center">
-                                    <h6 class="text-uppercase text-white">Title</h6>
-                                    <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                    <h6 class="text-uppercase text-white"></h6>
+                                    <p class=" text-white"></p>
                                     <div class="portfolio_hover_icon">
                                         <a href="assets/images/Portfolio/4.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
                                         <a href=""><i class="fa fa-search"></i></a>
@@ -620,14 +620,14 @@
 
                     <div class="col-md-12">
 
-                        <div class="col-md-8">
+                        <div class="col-md-8 m-top-30">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="portfolio_item">
                                         <img src="assets/images/solution/IMG_11.JPG" alt="" />
                                         <div class="portfolio_hover text-center">
-                                            <h6 class="text-uppercase text-white">Title</h6>
-                                            <p class=" text-white">Lorem ipsum dolor sit amet</p>
+                                            <h6 class="text-uppercase text-white"></h6>
+                                            <p class=" text-white"></p>
                                             <div class="portfolio_hover_icon">
                                                 <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
                                                 <a href=""><i class="fa fa-search"></i></a>
@@ -638,14 +638,12 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 m-top-30">
                             <div class="portfolio_item portfolio_item3 sm-m-top-30">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                </p>
+                                <p>管道水洗，清除管道污垢等。</p>
+                                <%--<p>--%>
+                                    <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
+                                <%--</p>--%>
                             </div>
                         </div>
                     </div>
@@ -669,27 +667,26 @@
                     <div class="skill_content wow fadeIn">
                         <h2>团队</h2>
                         <div class="separator_left"></div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
+                        <p>团队介绍：团队由经验丰富、高素质人才组成，团队成员年轻并充满朝气，具有强烈的创新意识并勇于迎接挑战。</p>
+                        <p>团队理念：秉承诚信、规范、高效的工作原则，用技术赢得市场，以创意服务取得信誉，竭诚为广大客户提供优质、高效、快捷的服务。面向未来，坚持自主创新。</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="skill_bar sm-m-top-50">
-                        <div class="teamskillbar clearfix m-top-20" data-percent="80%">
-                            <h6>Architecture Design</h6>
+                        <div class="teamskillbar clearfix m-top-20" data-percent="90%">
+                            <h6>结构设计/Architecture Design</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
 
-                        <div class="teamskillbar clearfix m-top-50" data-percent="75%">
-                            <h6>Algorithm Implement</h6>
+                        <div class="teamskillbar clearfix m-top-50" data-percent="95%">
+                            <h6>算法实现/Algorithm Implement</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
 
                         <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                            <h6>Data Analysis</h6>
+                            <h6>数据分析/Data Analysis</h6>
                             <div class="teamskillbar-bar"></div>
                         </div>
                         <!-- End Skill Bar -->
@@ -714,28 +711,28 @@
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">38</h2>
                         <div class="separator_small"></div>
-                        <h5><em>Projects Finished</em></h5>
+                        <h5><em>完成项目</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">28</h2>
                         <div class="separator_small"></div>
-                        <h5><em>Happy Clients</em></h5>
+                        <h5><em>客户</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">16854</h2>
                         <div class="separator_small"></div>
-                        <h5><em>Hours of work</em></h5>
+                        <h5><em>工作时间</em></h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">8427</h2>
                         <div class="separator_small"></div>
-                        <h5><em>Cup of coffee</em></h5>
+                        <h5><em>休闲娱乐</em></h5>
                     </div>
                 </div>
             </div>
@@ -907,7 +904,7 @@
                     <div class="head_title text-center">
                         <h2>动态</h2>
                         <div class="separator_auto"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                        <%--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
                     </div>
                 </div>
                 <div class="col-md-4 sec-animate3">
@@ -1045,9 +1042,9 @@
                             <div class="ab_head_icon">
                                 <i class="icofont icofont-fire-burn"></i>
                             </div>
-                            <h6 class="m-top-20"> WE’RE CREATIVE</h6>
+                            <h6 class="m-top-20"><em>创造力</em></h6>
                         </div>
-                        <p class="m-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing ealit, sed diaim nonummy nibsih euismod tincidiunt laorieet doloire magna diam aliquafm erat voluitpati. </p>
+                        <p class="m-top-20">我们几经历练，现在我们是一支非常有创造力的团队，并且这也是我们团队精神不可分割的一部分，支持着我们继续前行。 </p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1056,9 +1053,9 @@
                             <div class="ab_head_icon">
                                 <i class="icofont icofont-speech-comments"></i>
                             </div>
-                            <h6 class="m-top-20">WE'RE FRIENDLY</h6>
+                            <h6 class="m-top-20"><em>服务宗旨</em></h6>
                         </div>
-                        <p class="m-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing ealit, sed diaim nonummy nibsih euismod tincidiunt laorieet doloire magna diam aliquafm erat voluitpati. </p>
+                        <p class="m-top-20">我们一直都在遵循客户就是上帝的宗旨，服务于我们的客户。我们尽最大努力实现客户的需求、完成客户的既定目标。</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1067,9 +1064,9 @@
                             <div class="ab_head_icon">
                                 <i class="icofont icofont-heart"></i>
                             </div>
-                            <h6 class="m-top-20">WE LOVE MINIMALISM</h6>
+                            <h6 class="m-top-20"><em>极简主义</em></h6>
                         </div>
-                        <p class="m-top-20">Lorem ipsum dolor sit amet, consectetuer adipiscing ealit, sed diaim nonummy nibsih euismod tincidiunt laorieet doloire magna diam aliquafm erat voluitpati. </p>
+                        <p class="m-top-20">我们崇尚极简主义，并且将它运用到系统中，不仅能改善客户的使用体验，而且降低了系统复杂度。 </p>
                     </div>
                 </div>
             </div>
@@ -1104,7 +1101,7 @@
                                     <div class="chat-hover weixin_qrcode"><img src="assets/images/fprojects/1.jpg" /></div>
                                 </li>
                                 <li class="chat-li">
-                                    <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-mail-forward"></i></a>
+                                    <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-envelope"></i></a>
                                     <div class="chat-hover1 chat_email"><p>43434343@qq.com</p></div>
                                 </li>
                                 <!--<li>
@@ -1137,7 +1134,7 @@
                                     <textarea id="message" class="form-control" rows="6" placeholder="消息......"></textarea>
                                 </div>
                                 <div class="form-group text-center">
-                                    <a href="javascript:;" class="btn btn-primary" onclick="submitMessage()">SEND MESSAGE</a>
+                                    <a href="javascript:;" class="btn btn-primary" onclick="submitMessage()">发送消息</a>
                                 </div>
                             </div>
 
@@ -1191,6 +1188,7 @@
 
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/jparticle.jquery.min.js"></script>
 </body>
 
 </html>

@@ -1491,10 +1491,11 @@ production Section style
     padding-top: 23%;
 }
 .production_price_border .production_price h3{
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     font-size:2.822rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+    margin-top:15px;
 }
 .production_price_border .production_price p{
     font-size:0.929rem;

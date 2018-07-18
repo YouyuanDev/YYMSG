@@ -130,7 +130,6 @@ jQuery(document).ready(function($) {
 	//---------------------------------------------
 	// Scroll Up 
 	//---------------------------------------------
-
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 600) {
 			$('.scrollup').fadeIn('slow');
@@ -172,14 +171,18 @@ jQuery(document).ready(function($) {
 	});
 	//点击显示微信公众号图片 
 	openWeixinQRCode();
-
-	//加载地图
-	//loadCompanyLocation();
-
-	//加载地图结束
-
-	//End
-
+	//粒子效果
+    $(".overlay").jParticle({
+        background: "transparent",
+        color: "#218868",
+        particlesNumber:120,
+        particle: {
+            color: "white",
+            minSize: 2,
+            maxSize: 4,
+            speed: 120
+        }
+    });
 });
 /*新增函数*/
 function openWeixinQRCode() {
