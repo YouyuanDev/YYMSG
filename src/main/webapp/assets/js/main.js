@@ -170,7 +170,7 @@ jQuery(document).ready(function($) {
 		}, 6000);
 	});
 	//点击显示微信公众号图片 
-	openWeixinQRCode();
+	//openWeixinQRCode();
 	//粒子效果
     $(".overlay").jParticle({
         background: "transparent",

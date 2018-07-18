@@ -1755,23 +1755,20 @@ Footer Section style
     max-height: 100%;
     overflow:hidden;
 }
+.chat-list li{margin-right:120px;}
 .chat-li{position: relative;}
 .chat-hover{
     position: absolute;
-    top:-120px;
-    left:0px;
-    z-index:1000;
+    top:-30px;
+    left:60px;
     padding:5px;
-    display: none;
 }
 .chat-hover1{
     position: absolute;
-    top:-50px;
-    left:0px;
-    z-index:1000;
+    top:0px;
+    left:60px;
     padding:5px;
-    display: none;
-    color: #E06863;
+    color:#FFFFFF;
 }
 .solution-p{
     text-indent:10px;line-height:2.5em;

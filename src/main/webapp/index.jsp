@@ -1093,14 +1093,14 @@
                         <p>若有任何问题咨询，可通过右侧留言或以下联系方式联系，Top Inspector会尽快回复。</p>
                         <!--	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 -->
-                        <div class="widget_socail m-top-30">
-                            <ul class="list-inline">
+                        <div class="widget_socail m-top-40">
+                            <ul class="list-inline chat-list">
                                 <!--<li>
                                     <a href=""><i class="fa fa-qq"></i></a>
                                 </li>-->
                                 <li class="chat-li">
                                     <a href="jacascript:;" class="weixin_qrcode_span" id="chatting_our"><i class="fa fa-weixin"></i></a>
-                                    <div class="chat-hover weixin_qrcode"><img src="assets/images/fprojects/1.jpg" /></div>
+                                    <div class="chat-hover weixin_qrcode"><img src="assets/images/topinspector_weixin.png" /></div>
                                 </li>
                                 <li class="chat-li">
                                     <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-envelope"></i></a>
