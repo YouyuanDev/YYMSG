@@ -1773,4 +1773,6 @@ Footer Section style
     display: none;
     color: #E06863;
 }
-
+.solution-p{
+    text-indent:10px;line-height:2.5em;
+}

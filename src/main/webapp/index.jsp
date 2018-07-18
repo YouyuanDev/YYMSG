@@ -582,8 +582,8 @@
 
                         <div class="col-md-4">
                             <div class="portfolio_item portfolio_item3 sm-m-top-30">
-                                <p>
-                                    提供对天然气输送管涂敷生产与质检工序的质量控制解决方案。
+                                <p class="solution-p">
+                                    通过实现远程、动态、实时的智能化手持设备，替换传统生产管理方式的前台人工数据采集，更好的与后台计算机数据库结合，实现对日常生产管理中的工序数据，产品数据等进行实时监控、记录和自动更新。并且按照生产订单的关键工艺标准及检验标准进行校验，提供监理人员实时见证和数据追溯的便捷性，提供工厂工程人员对产品制造控制参数的实时分析和多样分析的可能性，提供对生产成本控制的数据支持等作用。
                                 </p>
                                 <%--<p>--%>
                                     <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
@@ -595,8 +595,8 @@
                     <div class="col-md-12">
                         <div class="col-md-4 m-top-30">
                             <div class="portfolio_item portfolio_item2 sm-m-top-30">
-                                <p>
-                                    管道喷涂，主要用于解决管道防腐问题。
+                                <p class="solution-p">
+                                    最大限度解决钢管信息在涂层生产过程中错号、乱号的问题，为涂层产品质量提供保证。构建钢管涂层项目要求的产品信息追溯系统，并达到国际领先水平。
                                 </p>
                                 <%--<p>--%>
                                     <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
@@ -640,7 +640,7 @@
 
                         <div class="col-md-4 m-top-30">
                             <div class="portfolio_item portfolio_item3 sm-m-top-30">
-                                <p>管道水洗，清除管道污垢等。</p>
+                                <p class="solution-p">在生产过程中初步实行钢管涂层生产的生产控制和质量控制的信息化、互联网化，为钢管涂层生产的数字化、智能化提供基础。</p>
                                 <%--<p>--%>
                                     <%--Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.--%>
                                 <%--</p>--%>
@@ -667,7 +667,7 @@
                     <div class="skill_content wow fadeIn">
                         <h2>团队</h2>
                         <div class="separator_left"></div>
-                        <p>团队介绍：团队由经验丰富、高素质人才组成，团队成员年轻并充满朝气，具有强烈的创新意识并勇于迎接挑战。</p>
+                        <p>团队介绍：本公司团队在计算机领域具有技术先进、经验丰富的专业高等人才，结合在天然气管道生产制造行业有着多年国外项目经验，提出了互联网+管道检验的新型质检体系。团队成员年轻并充满朝气，具有强烈的创新意识并勇于迎接挑战。</p>
                         <p>团队理念：秉承诚信、规范、高效的工作原则，用技术赢得市场，以创意服务取得信誉，竭诚为广大客户提供优质、高效、快捷的服务。面向未来，坚持自主创新。</p>
                     </div>
                 </div>
