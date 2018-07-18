@@ -20,7 +20,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rage Freebie HTML5 Landing page</title>
+    <title>Top Inspector</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.ico">
@@ -160,7 +160,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#brand">
-                    <img src="assets/images/logo.png" class="logo logo-display m-top-10" alt="">
+                    <img src="assets/images/logo.png" class="logo logo-display" alt="">
                     <img src="assets/images/logo.jpg" class="logo logo-scrolled" alt="">
                 </a>
             </div>
@@ -178,10 +178,10 @@
                         <a href="#portfolio">解决方案</a>
                     </li>
                     <li>
-                        <a href="#skill">团队</a>
+                        <a href="#blog" onclick="openCompanyBlog()">动态</a>
                     </li>
                     <li>
-                        <a href="#blog" onclick="openCompanyBlog()">动态</a>
+                        <a href="#skill">团队</a>
                     </li>
                     <li>
                         <a href="#about">关于我们</a>
@@ -254,8 +254,8 @@
                     </div>
 
                     <div class="home_btns m-top-40">
-                        <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
-                        <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-default m-top-20">DOWNLOAD NOW</a>
+                        <a href="javascript:;" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
+                        <a href="javascript:;" target="_blank" class="btn btn-default m-top-20">DOWNLOAD NOW</a>
                     </div>
 
                 </div>
@@ -658,6 +658,59 @@
 </section>
 <!-- End off Portfolio section-->
 
+<!--动态Section-->
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="main_blog text-center roomy-100">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="head_title text-center">
+                        <h2>动态</h2>
+                        <div class="separator_auto"></div>
+                        <%--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
+                    </div>
+                </div>
+                <div class="col-md-4 sec-animate3">
+                    <div class=" m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/solution/IMG_10.PNG" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>钢管涂层生产信息化控制系统APP-主页</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 sec-animate4">
+                    <div class=" m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/solution/IMG_8.PNG" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>钢管涂层生产信息化控制系统APP-产品信息页</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 sec-animate5">
+                    <div class=" m-top-20">
+                        <div class="blog_item_img">
+                            <img src="assets/images/solution/IMG_9.PNG" alt="" />
+                        </div>
+                        <div class="blog_text roomy-40">
+                            <h6>钢管涂层生产信息化控制系统APP-工序检测表单</h6>
+                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End off row -->
+    </div>
+    <!--End off container -->
+</section>
+<!-- End off Blog section-->
+
 <!--团队ection-->
 <section id="skill" class="skill roomy-100">
     <div class="container">
@@ -895,58 +948,7 @@
 
 <!-- End off Impress section-->
 
-<!--动态Section-->
-<section id="blog" class="blog">
-    <div class="container">
-        <div class="row">
-            <div class="main_blog text-center roomy-100">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="head_title text-center">
-                        <h2>动态</h2>
-                        <div class="separator_auto"></div>
-                        <%--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>--%>
-                    </div>
-                </div>
-                <div class="col-md-4 sec-animate3">
-                    <div class=" m-top-20">
-                        <div class="blog_item_img">
-                            <img src="assets/images/solution/IMG_10.PNG" alt="" />
-                        </div>
-                        <div class="blog_text roomy-40">
-                            <h6>钢管涂层生产信息化控制系统APP-主页</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 sec-animate4">
-                    <div class=" m-top-20">
-                        <div class="blog_item_img">
-                            <img src="assets/images/solution/IMG_8.PNG" alt="" />
-                        </div>
-                        <div class="blog_text roomy-40">
-                            <h6>钢管涂层生产信息化控制系统APP-产品信息页</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 sec-animate5">
-                    <div class=" m-top-20">
-                        <div class="blog_item_img">
-                            <img src="assets/images/solution/IMG_9.PNG" alt="" />
-                        </div>
-                        <div class="blog_text roomy-40">
-                            <h6>钢管涂层生产信息化控制系统APP-工序检测表单</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End off row -->
-    </div>
-    <!--End off container -->
-</section>
-<!-- End off Blog section-->
+
 
 <!--Maps Section-->
 <!--<div class="main_maps text-center fix">
@@ -1160,10 +1162,10 @@
     <div class="container">
         <div class="row">
             <div class="main_footer text-center p-top-40 p-bottom-30">
-                <p class="wow fadeInRight" data-wow-duration="1s">
+                <p class="wow fadeInRight" data-wow-duration="1s" style="font-family: normal;">
                     2018. All Rights Reserved
                 </p>
-                <p>
+                <p style="font-family: normal;">
                     ©2018 Top  Inspector 沪ICP证0000000号
                 </p>
             </div>

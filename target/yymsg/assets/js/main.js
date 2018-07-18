@@ -183,6 +183,12 @@ jQuery(document).ready(function($) {
             speed: 120
         }
     });
+    //图标放大效果
+    $('.service_item').hover(function(){
+        $(this).find('i').css({"font-size":"3.5rem","color":"#ff6863"});
+    },function(){
+        $(this).find('i').css({"font-size":"3rem","color":"#797979"});
+    });
 });
 /*新增函数*/
 function openWeixinQRCode() {
