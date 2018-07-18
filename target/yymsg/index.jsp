@@ -730,9 +730,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="skill_bottom_item">
-                        <h2 class="statistic-counter">8427</h2>
+                        <h2 class="statistic-counter">200000</h2>
                         <div class="separator_small"></div>
-                        <h5><em>休闲娱乐</em></h5>
+                        <h5><em>代码量</em></h5>
                     </div>
                 </div>
             </div>
@@ -1044,7 +1044,7 @@
                             </div>
                             <h6 class="m-top-20"><em>创造力</em></h6>
                         </div>
-                        <p class="m-top-20">我们几经历练，现在我们是一支非常有创造力的团队，并且这也是我们团队精神不可分割的一部分，支持着我们继续前行。 </p>
+                        <p class="m-top-20">新理念、新技术、新产品</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1053,9 +1053,9 @@
                             <div class="ab_head_icon">
                                 <i class="icofont icofont-speech-comments"></i>
                             </div>
-                            <h6 class="m-top-20"><em>服务宗旨</em></h6>
+                            <h6 class="m-top-20"><em>服务</em></h6>
                         </div>
-                        <p class="m-top-20">我们一直都在遵循客户就是上帝的宗旨，服务于我们的客户。我们尽最大努力实现客户的需求、完成客户的既定目标。</p>
+                        <p class="m-top-20">用户至上</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -1066,7 +1066,7 @@
                             </div>
                             <h6 class="m-top-20"><em>极简主义</em></h6>
                         </div>
-                        <p class="m-top-20">我们崇尚极简主义，并且将它运用到系统中，不仅能改善客户的使用体验，而且降低了系统复杂度。 </p>
+                        <p class="m-top-20">简约而不简单</p>
                     </div>
                 </div>
             </div>
@@ -1088,7 +1088,7 @@
                             <h3 class="text-white">Top Inspector</h3>
                             <div class="separator_small"></div>
                         </div>
-                        <p>如果有什么问题，你可以通过在此页面发送消息的方式的联系我们，也可以通过以下方式联系我们，我们会最快给你答复。</p>
+                        <p>若有任何问题咨询，可通过右侧留言或以下联系方式联系，Top Inspector会尽快回复。</p>
                         <!--	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 -->
                         <div class="widget_socail m-top-30">
