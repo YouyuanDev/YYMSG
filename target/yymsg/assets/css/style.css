@@ -1777,12 +1777,12 @@ Footer Section style
     display: none;
 }
 .service-ul{
-    background:#f7f7f7;
+    background:#BEBEBE;
 }
 .service-ul li:hover{
     cursor: pointer;}
 .service-ul li{
-    background:#f7f7f7;
+    background:#BEBEBE;
     border:none;
     margin-bottom:0px;
 }
@@ -1797,7 +1797,6 @@ Footer Section style
 }
 .service-con p{
     text-align: left;
-    text-indent:5px;
     word-wrap:break-word;
     word-break:break-all;
     line-height:30px;
@@ -1837,4 +1836,12 @@ Footer Section style
 }
 .detail-img{
     margin:0 auto;
+}
+.bg-color{
+    background:#f2f2f2;
+}
+.blog_text_two{
+    border-left:1px solid #abafb8;
+    border-right:1px solid #abafb8;
+    border-bottom:1px solid #abafb8;
 }

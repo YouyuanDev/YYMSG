@@ -18,7 +18,7 @@
     <script src="../assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 </head>
-<body>
+<body class="bg-color">
    <!--header-->
    <jsp:include page="../common/header.jsp"/>
    <div class="container">
@@ -29,7 +29,7 @@
                        <div class="blog_item_img">
                            <img src="../assets/images/solution/IMG_10.PNG" alt="" />
                        </div>
-                       <div class="blog_text roomy-40">
+                       <div class="blog_text roomy-40 blog_text_two">
                            <h6>钢管涂层生产信息化控制系统APP-主页</h6>
                            <p><em><a href="detail.jsp?detailId=1">July 30, 2018</a> /<a href="detail.jsp?detailId=1">Top Inspector Product.</a></em></p>
                        </div>
@@ -40,7 +40,7 @@
                        <div class="blog_item_img">
                            <img src="../assets/images/solution/IMG_8.PNG" alt="" />
                        </div>
-                       <div class="blog_text roomy-40">
+                       <div class="blog_text roomy-40 blog_text_two">
                            <h6>钢管涂层生产信息化控制系统APP-产品信息页</h6>
                            <p><em><a href="detail.jsp?detailId=2">July 30, 2018</a> /<a href="detail.jsp?detailId=2">Top Inspector Product.</a></em></p>
                        </div>
@@ -51,7 +51,7 @@
                        <div class="blog_item_img">
                            <img src="../assets/images/solution/IMG_9.PNG" alt="" />
                        </div>
-                       <div class="blog_text roomy-40">
+                       <div class="blog_text roomy-40 blog_text_two">
                            <h6>钢管涂层生产信息化控制系统APP-工序检测表单</h6>
                            <p><em><a href="detail.jsp?detailId=3">July 30, 2018</a> /<a href="detail.jsp?detailId=3">Top Inspector Product.</a></em></p>
                        </div>
@@ -74,7 +74,6 @@
    <script src="../assets/js/jparticle.jquery.min.js"></script>
    <script type="text/javascript">
        $(function () {
-           setHeaderColor();
            setShowHeader();
        });
    </script>

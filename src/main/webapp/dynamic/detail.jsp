@@ -18,10 +18,10 @@
     <script src="../assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 </head>
-<body>
+<body class="bg-color">
    <!--header-->
    <jsp:include page="../common/header.jsp"/>
-   <div class="container">
+   <div class="container bg-color">
        <div class="row" style="min-height:800px;">
            <div class="main_blog text-center roomy-100">
                <%--<div class="col-md-12 detail-title">--%>
@@ -40,6 +40,7 @@
                        <%--<img src="../assets/images/solution/IMG_7.PNG"/>--%>
                    <%--</div>--%>
                <%--</div>--%>
+
            </div>
        </div>
    </div>
@@ -57,17 +58,17 @@
    <script src="../assets/js/jparticle.jquery.min.js"></script>
    <script type="text/javascript">
        $(function () {
-           setHeaderColor();
+           //setHeaderColor();
            setShowHeader();
            //根据参数显示不同的信息
            var param=GetQueryString("detailId");
            if(param!=undefined&&param!=null){
                $.getJSON("../data/dynamic.json",function(data){
-                    $.each(data,function () {
-                        if(data.id==param){
-                            $('.main_blog').append(makeTemplate(data.title,data.author,data.content,data.imgList,data.datetime));
-                        }
-                    });
+                   for(var i=0;i<data.length;i++){
+                       if(data[i].id==param){
+                           $('.main_blog').append(makeTemplate(data[i].title,data[i].author,data[i].content,data[i].imgList,data[i].datetime));
+                       }
+                   }
                });
            }
        });
@@ -87,9 +88,9 @@
                '<div class="col-md-12 detail-imgList">';
            for (var i=0;i<imgArr.length;i++) {
                if(imgArr[i]!=undefined&&imgArr[i]!=""){
-                   tempalte+='<div class="col-md-4 detail-img">'+
+                   tempalte+='<div class="col-md-4"></div><div class="col-md-4 detail-img">'+
                        '<img src="'+imgArr[i]+'"/>'+
-                       '</div>';
+                       '</div><div class="col-md-4"></div>';
                }
            }
            tempalte+='</div>';

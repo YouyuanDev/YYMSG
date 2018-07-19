@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <script src="../assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body>
+<body class="bg-color">
    <!--header-->
    <jsp:include page="../common/header.jsp"/>
-   <div class="container">
+   <div class="container bg-color">
        <div class="row" style="min-height:800px;">
            <div class="main_blog text-center roomy-100">
                 <div class="col-md-3">
@@ -208,7 +208,6 @@
    <script src="../assets/js/jparticle.jquery.min.js"></script>
    <script type="text/javascript">
        $(function () {
-           setHeaderColor();
            setShowHeader();
            $('.service-ul li').click(function () {
                $(this).siblings('li').css('border-left','none');
