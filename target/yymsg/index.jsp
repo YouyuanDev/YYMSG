@@ -138,7 +138,7 @@
                 <div class="main_production roomy-100">
                     <div class="col-md-8 col-md-offset-2 col-sm-12">
                         <div class="head_title text-center">
-                            <h2>Top Inspector系列检验软件的功能</h2>
+                            <h2>Top Inspector检验软件功能</h2>
                             <div class="separator_auto"></div>
                         </div>
                     </div>

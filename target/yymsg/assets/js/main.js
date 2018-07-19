@@ -188,6 +188,12 @@ jQuery(document).ready(function($) {
 	$('#back-last-page').click(function () {
         history.go(-1);
     });
+	//搜索事件
+	$('#search-input').keydown(function (e) {
+		if(e.keyCode==13){
+			alert("暂未开通搜索功能....")
+		}
+    });
 });
 /*新增函数*/
 function openWeixinQRCode() {
