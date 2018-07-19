@@ -118,8 +118,8 @@
                     </div>
 
                     <div class="home_btns m-top-40">
-                        <a href="dynamic/dynamic.jsp" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
-                        <a href="dynamic/dynamic.jsp" target="_blank" class="btn btn-default m-top-20">DOWNLOAD NOW</a>
+                        <a href="dynamic/dynamic.jsp"  class="btn btn-primary m-top-20">GET STARTED</a>
+                        <a href="dynamic/dynamic.jsp"  class="btn btn-default m-top-20">DOWNLOAD NOW</a>
                     </div>
 
                 </div>
