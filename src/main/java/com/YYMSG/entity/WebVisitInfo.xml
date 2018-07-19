@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.YYMSG.dao.WebVisitInfoDao">
+    <insert id="addWebVisitInfo" parameterType="com.YYMSG.entity.WebVisitInfo">
+        INSERT INTO web_visit_info (visitor_ip,visit_time) VALUES (#{visitor_ip},#{visit_time})
+    </insert>
+    <delete id="delWebVisitInfo">
+        delete from web_visit_info WHERE
+        <foreach collection="array" item="item" open="id in (" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <update id="updateWebVisitInfo" parameterType="com.YYMSG.entity.WebVisitInfo">
+        UPDATE web_visit_info set visitor_ip=#{visitor_ip},visit_time=#{visit_time} WHERE id=#{id}
+    </update>
+
+
+    <select id="getCountAllByLike" resultType="int">
+        select count(*) from web_visit_info
+    </select>
+
+    <select id="getAllByLike" resultType="map">
+        select * from web_visit_info
+        ORDER BY id DESC
+        limit #{skip},#{take}
+    </select>
+
+    <select id="getIpCount" resultType="int">
+        select COUNT(DISTINCT(visitor_ip)) from web_visit_info
+    </select>
+</mapper>

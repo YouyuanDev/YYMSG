@@ -324,14 +324,14 @@
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_15.JPG" alt="" />
-            <a href="assets/images/solution/IMG_15.JPG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_16.JPG" alt="" />
+            <a href="assets/images/solution/IMG_16.JPG" class="popup-img"></a>
         </div>
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_16.JPG" alt="" />
-            <a href="assets/images/solution/IMG_16.JPG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_17.JPG" alt="" />
+            <a href="assets/images/solution/IMG_17.JPG" class="popup-img"></a>
         </div>
     </div>
 </div>
@@ -623,32 +623,39 @@
     <div class="container">
         <div class="row">
             <div class="skill_bottom_content text-center">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">38</h2>
                         <div class="separator_small"></div>
                         <h5><em>完成项目</em></h5>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">28</h2>
                         <div class="separator_small"></div>
                         <h5><em>客户</em></h5>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">16854</h2>
                         <div class="separator_small"></div>
                         <h5><em>工作时间</em></h5>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">200000</h2>
                         <div class="separator_small"></div>
                         <h5><em>代码量</em></h5>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="skill_bottom_item">
+                        <h2 class="visit-counter">1390</h2>
+                        <div class="separator_small"></div>
+                        <h5><em>潜在客户</em></h5>
                     </div>
                 </div>
             </div>
@@ -1040,6 +1047,7 @@
 <script type="text/javascript">
     $(function () {
         setHideHeader();
+        visitTotal();
     });
     function submitMessage() {
         var client_name = $('#first_name').val();
@@ -1055,9 +1063,8 @@
         $.ajax({
             type: "post",
             url:url,
-            async: false,
+            async: true,
             dataType: "json",
-            data:data,
             success: function(data) {
                 if(data) {
                     if(data.success) {
@@ -1070,6 +1077,26 @@
             },
             error: function() {
                 alert('发送失败,请尝试电话联系!');
+            }
+        });
+
+    }
+    function visitTotal() {
+        var url="/MessageOP/addVisitTotal.action";
+        $.ajax({
+            type: "post",
+            url:url,
+            async: true,
+            dataType: "json",
+            success: function(data) {
+                if(data){
+                    if(data.success){
+                        $('.visit-counter').text(data.message);
+                    }
+                }
+            },
+            error: function() {
+
             }
         });
     }

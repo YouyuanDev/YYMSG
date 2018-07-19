@@ -1,7 +1,9 @@
 package com.YYMSG.controller;
 
 import com.YYMSG.dao.MessageDao;
+import com.YYMSG.dao.WebVisitInfoDao;
 import com.YYMSG.entity.Message;
+import com.YYMSG.entity.WebVisitInfo;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -30,7 +32,8 @@ import java.util.Map;
 public class MessageController {
     @Autowired
     private MessageDao messageDao;
-
+    @Autowired
+    private WebVisitInfoDao webVisitInfoDao;
 
 
     //获取所有role列表
@@ -124,5 +127,38 @@ public class MessageController {
         ResponseUtil.write(response,json);
         return null;
     }
+    @RequestMapping("/addVisitTotal")
+    @ResponseBody
+    public String addVisitTotal(HttpServletRequest request,HttpServletResponse response)throws Exception{
+        System.out.println("--------------1");
+        String clientIp=getRemortIP(request);
+       if(clientIp!=null&&!clientIp.equals("")){
+           System.out.println(clientIp);
+           WebVisitInfo info=new WebVisitInfo();
+           info.setVisitor_ip(clientIp);
+           info.setVisit_time(new Date());
+           JSONObject json=new JSONObject();
+           int result=webVisitInfoDao.addWebVisitInfo(info);
+           int count=0;
+           if(result>0)
+           {
+               count=webVisitInfoDao.getIpCount();
+               json.put("success",true);
+               json.put("message",count);
+           }else{
+               json.put("success",false);
+               json.put("message","1390");
+           }
+           ResponseUtil.write(response,json);
+       }
+       return  null;
+    }
 
+    public String getRemortIP(HttpServletRequest request) {
+        if (request.getHeader("x-forwarded-for") == null) {
+            return request.getRemoteAddr();
+
+        }
+        return request.getHeader("x-forwarded-for");
+    }
 }
