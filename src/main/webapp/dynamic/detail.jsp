@@ -62,19 +62,13 @@
            //根据参数显示不同的信息
            var param=GetQueryString("detailId");
            if(param!=undefined&&param!=null){
-               $('.main_blog').append(param);
-               var title="";
-               var author="Top Inspector.";
-               var content="";
-               var imgList="";
-               var datetime="";
-               if(param==1){
-                  $('.main_blog').append(makeTemplate(title,author,content,imgList,datetime));
-               }else if(param==2){
-
-               }else if(param==3){
-
-               }
+               $.getJSON("../data/dynamic.json",function(data){
+                    $.each(data,function () {
+                        if(data.id==param){
+                            $('.main_blog').append(makeTemplate(data.title,data.author,data.content,data.imgList,data.datetime));
+                        }
+                    });
+               });
            }
        });
        function makeTemplate(title,author,content,imgList,datetime) {

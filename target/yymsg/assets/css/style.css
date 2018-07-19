@@ -1835,3 +1835,6 @@ Footer Section style
 .detail-content p{
     padding:20px 10px;
 }
+.detail-img{
+    margin:0 auto;
+}
