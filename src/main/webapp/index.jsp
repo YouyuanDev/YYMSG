@@ -306,32 +306,32 @@
 <div class="featured_slider">
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_0.JPG" alt="" />
-            <a href="assets/images/solution/IMG_0.JPG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_12.JPG" alt="" />
+            <a href="assets/images/solution/IMG_12.JPG" class="popup-img"></a>
         </div>
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_2.JPG" alt="" />
-            <a href="assets/images/solution/IMG_2.JPG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_13.JPG" alt="" />
+            <a href="assets/images/solution/IMG_13.JPG" class="popup-img"></a>
         </div>
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_11.JPG" alt="" />
-            <a href="assets/images/solution/IMG_11.JPG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_14.JPG" alt="" />
+            <a href="assets/images/solution/IMG_14.JPG" class="popup-img"></a>
         </div>
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_1.jpg" alt="" />
-            <a href="assets/images/solution/IMG_1.jpg" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_15.JPG" alt="" />
+            <a href="assets/images/solution/IMG_15.JPG" class="popup-img"></a>
         </div>
     </div>
     <div>
         <div class="featured_img">
-            <img src="assets/images/solution/IMG_10.PNG" alt="" />
-            <a href="assets/images/solution/IMG_10.PNG" class="popup-img"></a>
+            <img src="assets/images/solution/IMG_16.JPG" alt="" />
+            <a href="assets/images/solution/IMG_16.JPG" class="popup-img"></a>
         </div>
     </div>
 </div>
@@ -957,7 +957,7 @@
                         <!--	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
 -->
                         <div class="widget_socail m-top-40">
-                            <ul class="list-inline chat-list">
+                            <ul class="chat-list" style="list-style: none">
                                 <!--<li>
                                     <a href=""><i class="fa fa-qq"></i></a>
                                 </li>-->
@@ -967,7 +967,7 @@
                                 </li>
                                 <li class="chat-li">
                                     <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-envelope"></i></a>
-                                    <div class="chat-hover1 chat_email"><p>43434343@qq.com</p></div>
+                                    <div class="chat-hover1 chat_email"><p>topinspector@youyuantech.com</p></div>
                                 </li>
                                 <!--<li>
                                     <a href=""><i class="fa fa-weibo"></i></a>
