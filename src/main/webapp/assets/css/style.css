@@ -1851,3 +1851,10 @@ Footer Section style
     border-right:1px solid #abafb8;
     border-bottom:1px solid #abafb8;
 }
+.navbar-brand img{
+    margin-top:-10px;
+}
+.featured_slider .featured_img img{
+    width:470px;
+    height:300px;
+}
