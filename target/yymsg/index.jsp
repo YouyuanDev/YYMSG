@@ -435,7 +435,7 @@
                                             <p class=" text-white"></p>
                                             <div class="portfolio_hover_icon">
                                                 <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                                <a href=""><i class="fa fa-search"></i></a>
+                                                <%--<a href=""><i class="fa fa-search"></i></a>--%>
                                             </div>
                                         </div>
                                     </div>
@@ -474,7 +474,7 @@
                                     <p class=" text-white"></p>
                                     <div class="portfolio_hover_icon">
                                         <a href="assets/images/Portfolio/4.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                        <a href=""><i class="fa fa-search"></i></a>
+                                        <%--<a href=""><i class="fa fa-search"></i></a>--%>
                                     </div>
                                 </div>
                             </div>
@@ -493,7 +493,7 @@
                                             <p class=" text-white"></p>
                                             <div class="portfolio_hover_icon">
                                                 <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                                <a href=""><i class="fa fa-search"></i></a>
+                                                <%--<a href=""><i class="fa fa-search"></i></a>--%>
                                             </div>
                                         </div>
                                     </div>

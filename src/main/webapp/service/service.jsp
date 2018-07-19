@@ -143,7 +143,7 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                               生产过程中的数据根据用户的需求进行整理和归档，根据数据来分析生产情况。
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -151,7 +151,8 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                               生产过程中系统会根据生产标准对产品进行定向的质量分析，并且根据结果系统会做出提示，
+                                方便操作人员进行下一步操作。
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -159,7 +160,8 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                               系统会根据生产指标对产品的各方面的性能进行测量和评估，以此来判定产品是否合格，
+                                系统化的评估不仅能缩减操作人员的操作时间，而且能大大提高评估的精度。
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -167,7 +169,7 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                               系统可以根据需求对规定时间内的生产量进行计算分析，并且会综合各方面的结果来分析产品的合格率。
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -175,7 +177,7 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                               系统提供产品质保书的云服务，以此来保证生产的合格率。
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -183,7 +185,8 @@
                         </div>
                         <div class="col-md-12 service-con">
                             <p>
-
+                                系统可以根据通过第三方监理的数据提供相应的服务，
+                                以此来扩充数据比对，进一步来分析生产过程产生的数据。
                             </p>
                         </div>
                     </div>

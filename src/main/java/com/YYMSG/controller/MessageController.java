@@ -82,10 +82,10 @@ public class MessageController {
             }
             if(resTotal>0){
                 json.put("success",true);
-                json.put("message","保存成功");
+                json.put("message","留言成功，我们会尽快回复你!");
             }else{
                 json.put("success",false);
-                json.put("message","保存失败");
+                json.put("message","留言失败!");
             }
 
         }catch (Exception e){
