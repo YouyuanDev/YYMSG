@@ -189,6 +189,14 @@ jQuery(document).ready(function($) {
     },function(){
         $(this).find('i').css({"font-size":"3rem","color":"#797979"});
     });
+    //搜索框关闭事件
+	$('.close-search').click(function () {
+		$('#search-input').val('');
+    });
+	//返回上一页
+	$('#back-last-page').click(function () {
+        history.go(-1);
+    });
 });
 /*新增函数*/
 function openWeixinQRCode() {
@@ -249,4 +257,28 @@ function getDate1() {
 	var mins = oDate.getMinutes();
 	var s = oDate.getSeconds();
 	return y + '-' + (m < 10 ? ('0' + m) : m) + '-' + (d < 10 ? ('0' + d) : d) + ' ' + (h < 10 ? ('0' + h) : h) + ':' + (mins < 10 ? ('0' + mins) : mins) + ':' + (s < 10 ? ('0' + s) : s);
+}
+//设置头部背景色和字体颜色
+function setHeaderColor() {
+	$('nav.navbar.bootsnav.no-background.white .attr-nav ul li a').css("color","#fff");
+    $('nav.navbar.bootsnav.navbar-transparent.white ul.nav li a').css("color","#fff");
+    $('nav.navbar.bootsnav.no-background.white ul.nav li a').css("color","#fff");
+    $('nav.navbar.bootsnav.no-background').css("background","#292c2d");
+}
+//设置是否显示头部功能列表
+function  setShowHeader() {
+	$('.normal-li').css('display','none');
+	$('.return-index').css('display','block');
+
+}
+function  setHideHeader() {
+    $('.normal-li').css('display','block');
+    $('.return-index').css('display','none');
+}
+//获取url参数
+function GetQueryString(name)
+{
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
 }

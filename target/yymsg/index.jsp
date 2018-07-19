@@ -1,15 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kurt
-  Date: 7/16/18
-  Time: 5:51 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%
-    String basePath=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
-%>
 <html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -28,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -37,49 +26,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/bootsnav.css">
-    <!--For Plugins external css-->
-    <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-    <!--Theme custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
-    <!--Theme Responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script type="text/javascript">
 
-        function submitMessage() {
-            var client_name = $('#first_name').val();
-            var message = $('#message').val();
-            var phone_no = $('#phone').val();
-            var data={
-                client_name: client_name,
-                message_time:getDate1(),
-                message: message,
-                phone_no: phone_no
-            };
-            var url= "/MessageOP/saveMessage.action";
-            $.ajax({
-                type: "post",
-                url:url,
-                async: false,
-                dataType: "json",
-                data:data,
-                success: function(data) {
-			        if(data) {
-				      if(data.success) {
-					    alert(data.message);
-				      }
-                    }
-                    $('#first_name').val('');
-                    $('#message').val('');
-                    $('#phone').val('');
-                },
-                error: function() {
-                    alert('发送失败,请尝试电话联系!');
-                }
-            });
-        }
-    </script>
     <!---->
 </head>
 
@@ -99,148 +49,62 @@
 
 <div class="culmn">
     <!--Home page style-->
+    <jsp:include page="common/header.jsp"/>
+    <%--<nav class="navbar navbar-default navbar-fixed white no-background bootsnav">--%>
+        <%--<div class="top-search">--%>
+            <%--<div class="container">--%>
+                <%--<div class="input-group">--%>
+                    <%--<span class="input-group-addon"><i class="fa fa-search"></i></span>--%>
+                    <%--<input id="search-input" type="text" class="form-control" placeholder="Search">--%>
+                    <%--<span class="input-group-addon close-search"><i class="fa fa-times"></i></span>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
 
-    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
-        <!-- Start Top Search -->
-        <div class="top-search">
-            <div class="container">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                </div>
-            </div>
-        </div>
-        <!-- End Top Search -->
-
-        <div class="container">
-            <!-- Start Atribute Navigation -->
-            <div class="attr-nav">
-                <ul>
-                    <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-shopping-bag"></i>
-                            <span class="badge">3</span>
-                        </a>
-                        <ul class="dropdown-menu cart-list">
-                            <li>
-                                <a href="#" class="photo"><img src="assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
-                                <h6><a href="#">Delica omtantur </a></h6>
-                                <p class="m-top-10">2x - <span class="price">$99.99</span></p>
-                            </li>
-                            <li>
-                                <a href="#" class="photo"><img src="assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
-                                <h6><a href="#">Delica omtantur </a></h6>
-                                <p class="m-top-10">2x - <span class="price">$99.99</span></p>
-                            </li>
-                            <li>
-                                <a href="#" class="photo"><img src="assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
-                                <h6><a href="#">Delica omtantur </a></h6>
-                                <p class="m-top-10">2x - <span class="price">$99.99</span></p>
-                            </li>
-                            <li class="total">
-                                <span class="pull-right"><strong>Total</strong>: $0.00</span>
-                                <a href="#" class="btn btn-cart">Cart</a>
-                            </li>
-                        </ul>
-                    </li>-->
-                    <li class="search">
-                        <a href="#"><i class="fa fa-search"></i></a>
-                    </li>
-                    <%--<li class="side-menu">--%>
-                        <%--<a href="#"><i class="fa fa-bars"></i></a>--%>
-                    <%--</li>--%>
-                </ul>
-            </div>
-            <!-- End Atribute Navigation -->
-
-            <!-- Start Header Navigation -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#brand">
-                    <img src="assets/images/logo.png" class="logo logo-display" alt="">
-                    <img src="assets/images/logo.jpg" class="logo logo-scrolled" alt="">
-                </a>
-            </div>
-            <!-- End Header Navigation -->
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li>
-                        <a href="#hello">主页</a>
-                    </li>
-                    <li>
-                        <a href="#production" onclick="openFunctionAndService()">功能与服务</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">解决方案</a>
-                    </li>
-                    <li>
-                        <a href="#blog" onclick="openCompanyBlog()">动态</a>
-                    </li>
-                    <li>
-                        <a href="#skill">团队</a>
-                    </li>
-                    <li>
-                        <a href="#about">关于我们</a>
-                    </li>
-                    <li>
-                        <a href="#contact">联系我们</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-
-        <!-- Start Side Menu -->
-        <%--<div class="side">--%>
-            <%--<a href="#" class="close-side"><i class="fa fa-times"></i></a>--%>
-            <%--<div class="widget">--%>
-                <%--<h6 class="title">Custom Pages</h6>--%>
-                <%--<ul class="link">--%>
-                    <%--<li>--%>
-                        <%--<a href="#">About</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                        <%--<a href="#">Services</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                        <%--<a href="#">Blog</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                        <%--<a href="#">Portfolio</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                        <%--<a href="#">Contact</a>--%>
+        <%--<div class="container">--%>
+            <%--<div class="attr-nav">--%>
+                <%--<ul>--%>
+                    <%--<li class="search">--%>
+                        <%--<a href="#"><i class="fa fa-search"></i></a>--%>
                     <%--</li>--%>
                 <%--</ul>--%>
             <%--</div>--%>
-            <%--<div class="widget">--%>
-                <%--<h6 class="title">Additional Links</h6>--%>
-                <%--<ul class="link">--%>
+            <%--<div class="navbar-header">--%>
+                <%--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">--%>
+                    <%--<i class="fa fa-bars"></i>--%>
+                <%--</button>--%>
+                <%--<a class="navbar-brand" href="#brand">--%>
+                    <%--<img src="assets/images/logo.png" class="logo logo-display" alt="">--%>
+                    <%--<img src="assets/images/logo.jpg" class="logo logo-scrolled" alt="">--%>
+                <%--</a>--%>
+            <%--</div>--%>
+            <%--<div class="collapse navbar-collapse" id="navbar-menu">--%>
+                <%--<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">--%>
                     <%--<li>--%>
-                        <%--<a href="#">Retina Homepage</a>--%>
+                        <%--<a href="#hello">主页</a>--%>
                     <%--</li>--%>
                     <%--<li>--%>
-                        <%--<a href="#">New Page Examples</a>--%>
+                        <%--<a href="#production" onclick="openFunctionAndService()">功能与服务</a>--%>
                     <%--</li>--%>
                     <%--<li>--%>
-                        <%--<a href="#">Parallax Sections</a>--%>
+                        <%--<a href="#portfolio">解决方案</a>--%>
                     <%--</li>--%>
                     <%--<li>--%>
-                        <%--<a href="#">Shortcode Central</a>--%>
+                        <%--<a href="#blog" onclick="openCompanyBlog()">动态</a>--%>
                     <%--</li>--%>
                     <%--<li>--%>
-                        <%--<a href="#">Ultimate Font Collection</a>--%>
+                        <%--<a href="#skill">团队</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#about">关于我们</a>--%>
+                    <%--</li>--%>
+                    <%--<li>--%>
+                        <%--<a href="#contact">联系我们</a>--%>
                     <%--</li>--%>
                 <%--</ul>--%>
             <%--</div>--%>
         <%--</div>--%>
-        <!-- End Side Menu -->
-
-    </nav>
+    <%--</nav>--%>
 
     <!--首页 Sections-->
 
@@ -254,8 +118,8 @@
                     </div>
 
                     <div class="home_btns m-top-40">
-                        <a href="javascript:;" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
-                        <a href="javascript:;" target="_blank" class="btn btn-default m-top-20">DOWNLOAD NOW</a>
+                        <a href="dynamic/dynamic.jsp" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
+                        <a href="dynamic/dynamic.jsp" target="_blank" class="btn btn-default m-top-20">DOWNLOAD NOW</a>
                     </div>
 
                 </div>
@@ -304,7 +168,7 @@
 
                                 </ul>
                                 <div class="production_btn text-center m-top-40">
-                                    <a href="" class="btn btn-primary">查看详情</a>
+                                    <a href="service/service.jsp" class="btn btn-primary">查看详情</a>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +198,7 @@
                                     <li><i class="fa fa-check-circle text-primary"></i>无纸化的质量体系管理</li>
                                 </ul>
                                 <div class="production_btn text-center m-top-40">
-                                    <a href="" class="btn btn-primary">查看详情</a>
+                                    <a href="service/service.jsp" class="btn btn-primary">查看详情</a>
                                 </div>
                             </div>
                         </div>
@@ -363,12 +227,11 @@
                                     <li><i class="fa fa-check-circle text-primary"></i>第三方监理检验数据的数据云服务</li>
                                 </ul>
                                 <div class="production_btn text-center m-top-40">
-                                    <a href="" class="btn btn-primary">查看详情</a>
+                                    <a href="service/service.jsp" class="btn btn-primary">查看详情</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- 功能结束 -->
 
@@ -677,7 +540,7 @@
                         </div>
                         <div class="blog_text roomy-40">
                             <h6>钢管涂层生产信息化控制系统APP-主页</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                            <p><em><a href="dynamic/dynamic.jsp">July 30, 2018</a> /<a href="dynamic/dynamic.jsp">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
@@ -688,7 +551,7 @@
                         </div>
                         <div class="blog_text roomy-40">
                             <h6>钢管涂层生产信息化控制系统APP-产品信息页</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                            <p><em><a href="dynamic/dynamic.jsp">July 30, 2018</a> /<a href="dynamic/dynamic.jsp">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
@@ -699,7 +562,7 @@
                         </div>
                         <div class="blog_text roomy-40">
                             <h6>钢管涂层生产信息化控制系统APP-工序检测表单</h6>
-                            <p><em><a href="">July 30, 2018</a> /<a href="">Top Inspector Product.</a></em></p>
+                            <p><em><a href="dynamic/dynamic.jsp">July 30, 2018</a> /<a href="dynamic/dynamic.jsp">Top Inspector Product.</a></em></p>
                         </div>
                     </div>
                 </div>
@@ -1158,25 +1021,10 @@
 </div>
 <!-- End off scroll up -->
 
-<footer id="footer" class="footer bg-black">
-    <div class="container">
-        <div class="row">
-            <div class="main_footer text-center p-top-40 p-bottom-30">
-                <p class="wow fadeInRight" data-wow-duration="1s" style="font-family: normal;">
-                    2018. All Rights Reserved
-                </p>
-                <p style="font-family: normal;">
-                    ©2018 Top  Inspector 沪ICP证0000000号
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<jsp:include page="common/footer.jsp"/>
 </div>
 
 <!-- JS includes -->
-<script src="http://api.map.baidu.com/api?v=2.0&ak=rMLCpcqZ0hySdnFfia4hGPaxwajQVFfr"></script>
 <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 
@@ -1185,12 +1033,47 @@
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.collapse.js"></script>
 <script src="assets/js/bootsnav.js"></script>
-
 <!-- paradise slider js -->
-
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/jparticle.jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        setHideHeader();
+    });
+    function submitMessage() {
+        var client_name = $('#first_name').val();
+        var message = $('#message').val();
+        var phone_no = $('#phone').val();
+        var data={
+            client_name: client_name,
+            message_time:getDate1(),
+            message: message,
+            phone_no: phone_no
+        };
+        var url= "/MessageOP/saveMessage.action";
+        $.ajax({
+            type: "post",
+            url:url,
+            async: false,
+            dataType: "json",
+            data:data,
+            success: function(data) {
+                if(data) {
+                    if(data.success) {
+                        alert(data.message);
+                    }
+                }
+                $('#first_name').val('');
+                $('#message').val('');
+                $('#phone').val('');
+            },
+            error: function() {
+                alert('发送失败,请尝试电话联系!');
+            }
+        });
+    }
+</script>
 </body>
 
 </html>

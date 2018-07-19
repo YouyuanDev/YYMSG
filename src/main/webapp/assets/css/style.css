@@ -1773,3 +1773,53 @@ Footer Section style
 .solution-p{
     text-indent:10px;line-height:2.5em;
 }
+.return-index{
+    display: none;
+}
+.service-ul{
+    background:#f7f7f7;
+}
+.service-ul li:hover{
+    cursor: pointer;}
+.service-ul li{
+    background:#f7f7f7;
+    border:none;
+    margin-bottom:0px;
+}
+.service-ul li:not(:last-child){
+    border-bottom:2px solid #fff;
+}
+.service-ul li:first-child{
+    border-left:5px solid #FF6A6A;
+}
+.service-con{
+    margin-bottom:10px;
+}
+.service-con p{
+    text-align: left;
+    text-indent:5px;
+    word-wrap:break-word;
+    word-break:break-all;
+    line-height:30px;
+    padding:20px;
+    font-size:12px;
+}
+.service-con-title{
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size:16px;
+}
+.service-con-line{
+    height:0px;
+    border:1px solid #f5f5f5;
+    margin-top:7px;
+}
+.list-group-item:first-child{
+    border-radius:0px;
+}
+.service-hidden{
+    display: none;
+}
+
