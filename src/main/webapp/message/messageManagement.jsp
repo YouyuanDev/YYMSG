@@ -128,23 +128,14 @@
 
         function  clearFormLabel() {
             $('#messageForm').form('clear');
-
         }
-
     </script>
-
-
-
-
-
 </head>
-
 <body>
-
 <fieldset class="b3" style="padding:10px;margin:10px;">
-    <legend> <h3><b style="color: orange" >|&nbsp;</b><span class="i18n1" name="datadisplay">数据展示</span></h3></legend>
+    <legend> <h3><b style="color: orange" >|&nbsp;</b><span class="i18n1" name="messagerecord">留言板</span></h3></legend>
     <div  style="margin-top:5px;">
-        <table class="easyui-datagrid" id="messageDatagrids" url="/MessageOP/getMessageByLike.action" striped="true" loadMsg="正在加载中。。。" textField="text" pageSize="20" fitColumns="true" pagination="true" toolbar="#messageTb">
+        <table class="easyui-datagrid" id="messageDatagrids" url="/MessageOP/getMessageByLike.action" striped="true" loadMsg="正在加载中。。。" textField="text" pageSize="20" fitColumns="true" pagination="true" toolbar="#messageTb" style="max-height:400px;overflow-y: scroll;">
             <thead>
             <tr>
                 <th data-options="field:'ck',checkbox:true"></th>
@@ -156,18 +147,29 @@
                 <th field="email" align="center" width="100"  name="email">邮箱</th>
                 <th field="phone_no" align="center" width="100"  name="phone_no">邮箱</th>
                 <th field="is_read" align="center" width="100"  name="is_read">已读</th>
-
             </tr>
             </thead>
         </table>
 
     </div>
 </fieldset>
+<fieldset class="b3" style="padding:10px;margin:10px;">
+    <legend> <h3><b style="color: orange" >|&nbsp;</b><span class="i18n1" name="visitrecord">访问记录</span></h3></legend>
+    <div  style="margin-top:5px;">
+        <table class="easyui-datagrid" id="visitDatagrids" url="/WebVisit/getWebVisitByLike.action" striped="true" loadMsg="正在加载中。。。" textField="text" pageSize="20" fitColumns="true" pagination="true" toolbar="" style="max-height:300px;overflow-y: scroll;">
+            <thead>
+            <tr>
+                <th field="id" align="center" width="100" class="i18n1" name="id"></th>
+                <th field="visitor_ip" align="center" width="100"   name="visitorip"></th>
+                <th field="visit_time" align="center" width="100"  name="visittime" data-options="formatter:formatterdate">日期</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</fieldset>
 
 <!--工具栏-->
 <div id="messageTb" style="padding:10px;">
-
-
     <a href="#" class="easyui-linkbutton" plain="true" data-options="iconCls:'icon-search'" onclick="DoSearch()">Search</a>
     <div style="float:right">
         <a href="#" id="addMessageLinkBtn" class="easyui-linkbutton i18n1" name="add" data-options="iconCls:'icon-add',plain:true" onclick="addMessage()">添加</a>

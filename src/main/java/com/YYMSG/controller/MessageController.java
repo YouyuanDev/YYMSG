@@ -36,10 +36,9 @@ public class MessageController {
     private WebVisitInfoDao webVisitInfoDao;
 
 
-    //获取所有role列表
     @RequestMapping("getMessageByLike")
     @ResponseBody
-    public String getRoleByLike( HttpServletRequest request){
+    public String getMessageByLike( HttpServletRequest request){
         String page= request.getParameter("page");
         String rows= request.getParameter("rows");
         if(page==null){
@@ -60,9 +59,6 @@ public class MessageController {
 
     }
 
-
-
-    //保存Role
     @RequestMapping("/saveMessage")
     @ResponseBody
     public String saveMessage(Message message,HttpServletResponse response){

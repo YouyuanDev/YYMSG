@@ -623,6 +623,7 @@
     <div class="container">
         <div class="row">
             <div class="skill_bottom_content text-center">
+                <div class="col-md-1"></div>
                 <div class="col-md-2">
                     <div class="skill_bottom_item">
                         <h2 class="statistic-counter">38</h2>
@@ -968,10 +969,10 @@
                                 <!--<li>
                                     <a href=""><i class="fa fa-qq"></i></a>
                                 </li>-->
-                                <li class="chat-li">
-                                    <a href="jacascript:;" class="weixin_qrcode_span" id="chatting_our"><i class="fa fa-weixin"></i></a>
-                                    <div class="chat-hover weixin_qrcode"><img src="assets/images/topinspector_weixin.png" /></div>
-                                </li>
+                                <%--<li class="chat-li">--%>
+                                    <%--<a href="jacascript:;" class="weixin_qrcode_span" id="chatting_our"><i class="fa fa-weixin"></i></a>--%>
+                                    <%--<div class="chat-hover weixin_qrcode"><img src="assets/images/topinspector_weixin.png" /></div>--%>
+                                <%--</li>--%>
                                 <li class="chat-li">
                                     <a href="jacascript:;" class="chat_email_span" id="chatting_eamil"><i class="fa fa-envelope"></i></a>
                                     <div class="chat-hover1 chat_email"><p>topinspector@youyuantech.com</p></div>
@@ -1064,6 +1065,7 @@
             type: "post",
             url:url,
             async: true,
+            data:data,
             dataType: "json",
             success: function(data) {
                 if(data) {

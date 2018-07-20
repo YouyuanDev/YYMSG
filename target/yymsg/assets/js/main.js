@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 			if(target.length) {
 				$('html,body').animate({
 					scrollTop: (target.offset().top - 80)
-				}, 1000);
+				},1000);
 				if($('.navbar-toggle').css('display') != 'none') {
 					$(this).parents('.container').find(".navbar-toggle").trigger("click");
 				}
@@ -191,7 +191,7 @@ jQuery(document).ready(function($) {
 	//搜索事件
 	$('#search-input').keydown(function (e) {
 		if(e.keyCode==13){
-			alert("暂未开通搜索功能....")
+			 window.location.href="../../dynamic/dynamic.jsp";
 		}
     });
 });
